@@ -1,0 +1,107 @@
+body {
+    font-weight: bold;
+}
+
+
+.navbar {
+    background-color: #fff;
+    height:80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;    
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transform: 0.3s color;
+}
+
+#nav-dropdown {
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: backround-color 0.3s;
+}
+
+
+#nav-dropdown:hover {
+    background-color: #00b383;
+    color: #000;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-link:hover, .nav-link:active {
+    color: #000;
+}
+
+@media (min-width: 991px) {
+    .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;   /* jarak garis dari teks */
+    left: 0;
+    width: 100%;    /* sepanjang teks */
+    height: 2px;
+    background-color: #009970;
+    transform: scaleX(0);       /* awalnya disembunyikan */
+    transform-origin: center;   /* garis muncul dari tengah */
+    transition: transform 0.3s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+    transform: scaleX(1);   /* pas hover/active garis muncul penuh */
+    }
+}
+
+.hero-section {
+    background: url(img/hero-bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.hero-section h2 {
+    font-size: 1.2rem;
+}
