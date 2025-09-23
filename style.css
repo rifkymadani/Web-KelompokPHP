@@ -1,187 +1,246 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
   scroll-behavior: smooth;
 }
 
-
-h1,h2,h3,h4,h5,h6,a,p {
-     font-family: "Montserrat", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  font-family: "Montserrat", sans-serif;
 }
 
-h1,h2,h3,h4 {
-    font-weight: 900;
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 900;
 }
 
-h5,h6,a,p {
-    font-weight: 300;
+h5,
+h6,
+a,
+p {
+  font-weight: 300;
 }
 
 body {
-    font-weight: bold;
-    --colorOne: #009970;
-    --colorTwo: #00b383;
+  font-weight: bold;
+  --colorOne: #009970;
+  --colorTwo: #00b383;
+  --primary-yellow: #ffd700;
+  --primary-red: #ff4b4b;
+  --primary-blue: #4285f4;
+  --dark-blue: #1a56db;
+  --light-bg: #f9fafb;
 }
 
-
 .navbar {
-    background-color: #fff;
-    height:80px;
-    margin: 20px;
-    border-radius: 16px;
-    padding: 0.5rem;    
+  background-color: #fff;
+  height: 80px;
+  margin: 20px;
+  border-radius: 16px;
+  padding: 0.5rem;
 }
 
 .navbar-brand {
-    font-weight: 500;
-    color: var(--colorOne);
-    font-size: 24px;
-    transform: 0.3s color;
+  font-weight: 500;
+  color: var(--colorOne);
+  font-size: 24px;
+  transform: 0.3s color;
 }
 
 #nav-dropdown {
-    background-color: var(--colorOne);
-    color: #fff;
-    font-size: 14px;
-    padding: 8px 20px;
-    border-radius: 50px;
-    transition: backround-color 0.3s;
+  background-color: var(--colorOne);
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: backround-color 0.3s;
 }
 
-
 #nav-dropdown:hover {
-    background-color: var(--colorTwo);
-    color: #000;
+  background-color: var(--colorTwo);
+  color: #000;
 }
 
 .navbar-toggler {
-    border: none;
-    font-size: 1.25rem;
+  border: none;
+  font-size: 1.25rem;
 }
 
-.navbar-toggler:focus, .btn-close:focus {
-    box-shadow: none;
-    outline: none;
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
 }
 
 .nav-link {
-    color: #666777;
-    font-weight: 500;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.nav-link:hover, .nav-link:active {
-    color: #000;
+.nav-link:hover,
+.nav-link:active {
+  color: #000;
 }
 
 @media (min-width: 991px) {
-    .nav-link::after {
+  .nav-link::after {
     content: "";
     position: absolute;
-    bottom: -4px;   /* jarak garis dari teks */
+    bottom: -4px; /* jarak garis dari teks */
     left: 0;
-    width: 100%;    /* sepanjang teks */
+    width: 100%; /* sepanjang teks */
     height: 2px;
     background-color: var(--colorOne);
-    transform: scaleX(0);       /* awalnya disembunyikan */
-    transform-origin: center;   /* garis muncul dari tengah */
+    transform: scaleX(0); /* awalnya disembunyikan */
+    transform-origin: center; /* garis muncul dari tengah */
     transition: transform 0.3s ease;
-    }
+  }
 
-    .nav-link:hover::after,
-    .nav-link.active::after {
-    transform: scaleX(1);   /* pas hover/active garis muncul penuh */
-    }
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    transform: scaleX(1); /* pas hover/active garis muncul penuh */
+  }
 }
 
 .hero-section {
-    background: url(img/hero-bg.jpg) no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    
+  background: url(img/hero-bg.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .hero-section::before {
-    background-color: rgba(0, 0, 0, 0.6);
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .hero-section .container {
-    height: 100vh;
-    z-index: 1;
-    position: relative;
+  height: 100vh;
+  z-index: 1;
+  position: relative;
 }
 
 .hero-section h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .hero-section h2 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 /* about section */
 .center-vertical {
-    background-color: light;
-    width: 100%;
-    height: 100%;
+  background-color: light;
+  width: 100%;
+  height: 100%;
 }
 
 .about-us-section {
-    width: 100%;
-    padding: calc(5% + 30px) 0px;
+  width: 100%;
+  padding: calc(5% + 30px) 0px;
 }
 
 .about-us-section .img-head {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
 }
 
 .about-us-section .img-head img {
-    width: 100%;
-    transition: transform .3s;
+  width: 100%;
+  transition: transform 0.3s;
 }
 
 .about-us-section .img-head img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .about-us-section .img-head img::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to right bottom, var(--colorOne), var(--colorTwo));
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: .5;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--colorOne),
+    var(--colorTwo)
+  );
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
 }
 
 .about-us-section .text-head {
-    font-size: 28px;
-    color: var(--colorOne);
-    text-align: center;
-    margin-bottom: 0;
+  font-size: 28px;
+  color: var(--colorOne);
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .about-us-section .break-small {
-    width: 120px;
-    height: 3px;
-    background-color: var(--colorTwo);
-    margin: 0 auto;
+  width: 120px;
+  height: 3px;
+  background-color: var(--colorTwo);
+  margin: 0 auto;
 }
 
 .about-us-section .text-para {
-    font-size: 16px;
-    color: #000;
+  font-size: 16px;
+  color: #000;
+  text-align: justify;
+}
+
+/* Members Section */
+#members {
+  background-color: var(--colorOne);
+  padding: 80px 0;
+}
+
+.section-title {
+    color: #fff;
+}
+.member-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  height: 100%;
+}
+
+.member-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.member-img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.member-name {
+  font-weight: 600;
+  color: var(--colorTwo);
+}
+
+.member-role {
+  color: var(--primary-red);
+  font-weight: 500;
 }

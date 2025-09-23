@@ -7,6 +7,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
      <link rel="stylesheet" href="style.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
     
     <!-- Navbar -->
@@ -58,7 +62,7 @@
     <!-- Navbar end -->
 
     <!-- Hero section -->
-    <section class="hero-section" id="hero">
+    <section data-aos="fade-up" class="hero-section" id="hero">
         <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column text-center">
             <h1>Kelompok 8 PHP</h1>
             <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Dolorum esse officiis at. Nam, ea deserunt omnis repellendus veniam deleniti similique <br> quaerat quia dolorem obcaecati aut nesciunt officiis beatae eius atque.</h2>
@@ -66,9 +70,8 @@
     </section>
      <!-- Hero section end -->
 
-    <!-- About section -->
     <!-- About Us Section -->
-    <section id="about-us">
+    <section data-aos="fade-up" id="about-us">
         <div class="center-vertical ">
             <div class="about-us-section "> 
                 <div class="container">
@@ -80,10 +83,10 @@
                         </div>
                         <div class="col-12 col-lg-6">
                             <h2 class="text-head mb-1">
-                                ABOUT US
+                                TENTANG
                             </h2>
                             <div class="break-small mb-2 "></div>
-                            <p class="text-para">
+                            <p class="text-para " >
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ex, exercitationem fugiat quo odio, commodi maiores aliquid earum eveniet corrupti mollitia ipsam error dolorum ad amet ipsa vero quae inventore.
                             </p>
                         </div>
@@ -92,9 +95,143 @@
                 </div>
             </div>
         </div>
-
     </section>
     <!-- About section end -->
+
+    <!-- Members -->
+    <section data-aos="fade-up"id="members">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">ANGGOTA KELOMPOK</h2>
+                
+                <div class="row">
+                    <!-- Member 1 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="member-card card border-0">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/358fa369-4a9c-4114-ba34-597be6b7b221.png" class="card-img-top member-img" alt="Photo of team member Alex Johnson">
+                            <div class="card-body text-center">
+                                <h5 class="member-name card-title">Alex Johnson</h5>
+                                <p class="card-text">ID: STU001</p>
+                                <p class="member-role">Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Member 2 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="member-card card border-0">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/749a1081-c1ca-4765-9f7a-af7d05e795a2.png" class="card-img-top member-img" alt="Photo of team member Sarah Williams">
+                            <div class="card-body text-center">
+                                <h5 class="member-name card-title">Sarah Williams</h5>
+                                <p class="card-text">ID: STU002</p>
+                                <p class="member-role">Frontend Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Member 3 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="member-card card border-0">
+                            <img src="https://placehold.co/400x500" class="card-img-top member-img" alt="Photo of team member Michael Chen">
+                            <div class="card-body text-center">
+                                <h5 class="member-name card-title">Michael Chen</h5>
+                                <p class="card-text">ID: STU003</p>
+                                <p class="member-role">Backend Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Member 4 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="member-card card border-0">
+                            <img src="https://placehold.co/400x500" class="card-img-top member-img" alt="Photo of team member Emily Davis">
+                            <div class="card-body text-center">
+                                <h5 class="member-name card-title">Emily Davis</h5>
+                                <p class="card-text">ID: STU004</p>
+                                <p class="member-role">UI/UX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Member 5 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="member-card card border-0">
+                            <img src="https://placehold.co/400x500" class="card-img-top member-img" alt="Photo of team member Emily Davis">
+                            <div class="card-body text-center">
+                                <h5 class="member-name card-title">Emily Davis</h5>
+                                <p class="card-text">ID: STU004</p>
+                                <p class="member-role">UI/UX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="member-card card border-0">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/358fa369-4a9c-4114-ba34-597be6b7b221.png" class="card-img-top member-img" alt="Photo of team member Alex Johnson">
+                            <div class="card-body text-center">
+                                <h5 class="member-name card-title">Alex Johnson</h5>
+                                <p class="card-text">ID: STU001</p>
+                                <p class="member-role">Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Member 6 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="member-card card border-0">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/749a1081-c1ca-4765-9f7a-af7d05e795a2.png" class="card-img-top member-img" alt="Photo of team member Sarah Williams">
+                            <div class="card-body text-center">
+                                <h5 class="member-name card-title">Sarah Williams</h5>
+                                <p class="card-text">ID: STU002</p>
+                                <p class="member-role">Frontend Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Member 7 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="member-card card border-0">
+                            <img src="https://placehold.co/400x500" class="card-img-top member-img" alt="Photo of team member Michael Chen">
+                            <div class="card-body text-center">
+                                <h5 class="member-name card-title">Michael Chen</h5>
+                                <p class="card-text">ID: STU003</p>
+                                <p class="member-role">Backend Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Member 8 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="member-card card border-0">
+                            <img src="https://placehold.co/400x500" class="card-img-top member-img" alt="Photo of team member Emily Davis">
+                            <div class="card-body text-center">
+                                <h5 class="member-name card-title">Emily Davis</h5>
+                                <p class="card-text">ID: STU004</p>
+                                <p class="member-role">UI/UX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Member 9 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="member-card card border-0">
+                            <img src="https://placehold.co/400x500" class="card-img-top member-img" alt="Photo of team member Emily Davis">
+                            <div class="card-body text-center">
+                                <h5 class="member-name card-title">Emily Davis</h5>
+                                <p class="card-text">ID: STU004</p>
+                                <p class="member-role">UI/UX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+     <!-- Members end -->
+
+     <!-- js AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
