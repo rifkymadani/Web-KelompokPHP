@@ -71,7 +71,7 @@ body {
   transform: scale(1.05);
 }
 
-#nav-dropdown {
+#nav-univ {
   background: linear-gradient(135deg, var(--colorOne), var(--colorTwo));
   color: #fff;
   font-size: 14px;
@@ -82,7 +82,7 @@ body {
   box-shadow: var(--shadow-light);
 }
 
-#nav-dropdown:hover {
+#nav-univ:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-medium);
   background: linear-gradient(135deg, var(--colorTwo), var(--colorOne));

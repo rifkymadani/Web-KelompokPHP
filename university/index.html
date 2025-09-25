@@ -1,341 +1,265 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>UIN Sunan Gunung Djati Bandung</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="/style.css" />
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="d-flex flex-column container">
-			<!-- Navbar -->
-			<nav class="navbar navbar-expand-lg sticky-top">
-				<div class="container-fluid px-5">
-					<a class="navbar-brand me-auto" href="#">PHP</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="offcanvas"
-						data-bs-target="#offcanvasNavbar"
-						aria-controls="offcanvasNavbar"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div
-						class="offcanvas offcanvas-end"
-						tabindex="-1"
-						id="offcanvasNavbar"
-						aria-labelledby="offcanvasNavbarLabel"
-					>
-						<div class="offcanvas-header">
-							<h5
-								class="offcanvas-title"
-								id="offcanvasNavbarLabel"
-							>
-								Kelompok 8
-							</h5>
-							<button
-								type="button"
-								class="btn-close"
-								data-bs-dismiss="offcanvas"
-								aria-label="Close"
-							></button>
-						</div>
-						<div class="offcanvas-body">
-							<ul
-								class="navbar-nav justify-content-center flex-grow-1 gap-4"
-							>
-								<li class="nav-item">
-									<a
-										class="nav-link active"
-										aria-current="page"
-										href="/index.html"
-										>Beranda</a
-									>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#about-us"
-										>Tentang</a
-									>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Anggota</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="/documentation"
-										>Dokumentasi</a
-									>
-								</li>
-							</ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UIN Sunan Gunung Djati Bandung</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-sticky-top">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand me-auto" href="#hero">PHP</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Kelompok 8
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 gap-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#hero"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#members">Anggota</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#documentation">Dokumentasi</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav" id="nav-univ">
+              <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="university" role="button" aria-expanded="false">University</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+      <!-- Navbar end -->
 
-							<!-- Dropdown -->
-							<ul class="navbar-nav" id="nav-dropdown">
-								<li class="nav-item dropdown">
-									<a
-										class="nav-link dropdown-toggle"
-										href="#"
-										role="button"
-										data-bs-toggle="dropdown"
-										aria-expanded="false"
-									>
-										University
-									</a>
-									<ul
-										class="dropdown-menu justify-content-end"
-									>
-										<li>
-											<a class="dropdown-item" href="#"
-												>University</a
-											>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#"
-												>Fakultas</a
-											>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#"
-												>Prodi</a
-											>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<!-- Dropdown end -->
-						</div>
-					</div>
-				</div>
-			</nav>
-			<!-- Navbar end -->
+      <!-- Konten utama tanpa navbar -->
+      <div class="container my-5">
+        <!-- Header/Judul -->
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="display-4 fw-bold mb-4" id="title">
+              Tentang Universitas
+            </h1>
+            <p class="lead text-muted">
+              Selamat datang di halaman informasi tentang Universitas kami. Di
+              sini, kami menjelaskan sejarah, visi, dan program pendidikan yang
+              kami tawarkan.
+            </p>
+          </div>
+        </div>
 
-			<!-- Konten utama tanpa navbar -->
-			<div class="container my-5">
-				<!-- Header/Judul -->
-				<div class="row">
-					<div class="col-12 text-center">
-						<h1 class="display-4 fw-bold mb-4" id="title">
-							Tentang Universitas
-						</h1>
-						<p class="lead text-muted">
-							Selamat datang di halaman informasi tentang
-							Universitas kami. Di sini, kami menjelaskan sejarah,
-							visi, dan program pendidikan yang kami tawarkan.
-						</p>
-					</div>
-				</div>
+        <!-- Section 1: Pengertian Universitas -->
+        <div class="row my-5">
+          <div class="col-md-8 mx-auto">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title h4 text-center mb-3">
+                  Apa Itu Universitas?
+                </h2>
+                <p class="card-text">
+                  Universitas adalah lembaga pendidikan tinggi yang bertujuan
+                  untuk mengembangkan ilmu pengetahuan, teknologi, dan seni
+                  melalui pendidikan, penelitian, dan pengabdian kepada
+                  masyarakat. Universitas kami didirikan dengan komitmen untuk
+                  mencetak generasi muda yang berintegritas, inovatif, dan siap
+                  menghadapi tantangan global.
+                </p>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <strong>Visi:</strong> Menjadi universitas terdepan di Asia
+                    Tenggara dalam bidang pendidikan berkualitas.
+                  </li>
+                  <li class="mb-2">
+                    <strong>Misi:</strong> Memberikan pendidikan holistik,
+                    mendukung penelitian mutakhir, dan berkontribusi pada
+                    pembangunan nasional.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				<!-- Section 1: Pengertian Universitas -->
-				<div class="row my-5">
-					<div class="col-md-8 mx-auto">
-						<div class="card shadow-sm">
-							<div class="card-body">
-								<h2 class="card-title h4 text-center mb-3">
-									Apa Itu Universitas?
-								</h2>
-								<p class="card-text">
-									Universitas adalah lembaga pendidikan tinggi
-									yang bertujuan untuk mengembangkan ilmu
-									pengetahuan, teknologi, dan seni melalui
-									pendidikan, penelitian, dan pengabdian
-									kepada masyarakat. Universitas kami
-									didirikan dengan komitmen untuk mencetak
-									generasi muda yang berintegritas, inovatif,
-									dan siap menghadapi tantangan global.
-								</p>
-								<ul class="list-unstyled">
-									<li class="mb-2">
-										<strong>Visi:</strong> Menjadi
-										universitas terdepan di Asia Tenggara
-										dalam bidang pendidikan berkualitas.
-									</li>
-									<li class="mb-2">
-										<strong>Misi:</strong> Memberikan
-										pendidikan holistik, mendukung
-										penelitian mutakhir, dan berkontribusi
-										pada pembangunan nasional.
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
+        <!-- Section 2: Sejarah Singkat -->
+        <div class="row my-5">
+          <div class="col-md-8 mx-auto">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title h4 text-center mb-3">
+                  Sejarah Universitas
+                </h2>
+                <p class="card-text">
+                  Universitas kami berdiri sejak tahun 1950 sebagai respons
+                  terhadap kebutuhan pendidikan tinggi pasca-kemerdekaan
+                  Indonesia. Awalnya dimulai dengan fakultas kecil, kini telah
+                  berkembang menjadi institusi dengan lebih dari 20 fakultas dan
+                  ribuan mahasiswa. Prestasi kami termasuk kolaborasi
+                  internasional dengan universitas-universitas ternama di dunia.
+                </p>
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="https://dummyimage.com/600x300"
+                    alt="Gambar Sejarah Universitas"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				<!-- Section 2: Sejarah Singkat -->
-				<div class="row my-5">
-					<div class="col-md-8 mx-auto">
-						<div class="card shadow-sm">
-							<div class="card-body">
-								<h2 class="card-title h4 text-center mb-3">
-									Sejarah Universitas
-								</h2>
-								<p class="card-text">
-									Universitas kami berdiri sejak tahun 1950
-									sebagai respons terhadap kebutuhan
-									pendidikan tinggi pasca-kemerdekaan
-									Indonesia. Awalnya dimulai dengan fakultas
-									kecil, kini telah berkembang menjadi
-									institusi dengan lebih dari 20 fakultas dan
-									ribuan mahasiswa. Prestasi kami termasuk
-									kolaborasi internasional dengan
-									universitas-universitas ternama di dunia.
-								</p>
-								<div class="d-flex justify-content-center">
-									<img
-										src="https://dummyimage.com/600x300"
-										alt="Gambar Sejarah Universitas"
-										class="img-fluid rounded"
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+        <!-- Section 3: Program Studi -->
+        <div class="row my-5">
+          <div class="col-12">
+            <h2 class="text-center h4 mb-4">Fakultas Unggulan</h2>
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Fakultas Teknik</h5>
+                    <p class="card-text">
+                      Program sarjana dan pascasarjana di bidang teknik sipil,
+                      mesin, dan informatika dengan kurikulum berbasis teknologi
+                      terkini.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Fakultas Ekonomi</h5>
+                    <p class="card-text">
+                      Belajar manajemen, akuntansi, dan ekonomi dengan fokus
+                      pada entrepreneurship dan keuangan berkelanjutan.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Fakultas Kedokteran</h5>
+                    <p class="card-text">
+                      Pendidikan medis lengkap dengan fasilitas rumah sakit
+                      terintegrasi untuk praktik klinis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				<!-- Section 3: Program Studi -->
-				<div class="row my-5">
-					<div class="col-12">
-						<h2 class="text-center h4 mb-4">
-							Fakultas Unggulan
-						</h2>
-						<div class="row g-4">
-							<div class="col-md-4">
-								<div class="card h-100 shadow-sm">
-									<div class="card-body text-center">
-										<h5 class="card-title">
-											Fakultas Teknik
-										</h5>
-										<p class="card-text">
-											Program sarjana dan pascasarjana di
-											bidang teknik sipil, mesin, dan
-											informatika dengan kurikulum
-											berbasis teknologi terkini.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="card h-100 shadow-sm">
-									<div class="card-body text-center">
-										<h5 class="card-title">
-											Fakultas Ekonomi
-										</h5>
-										<p class="card-text">
-											Belajar manajemen, akuntansi, dan
-											ekonomi dengan fokus pada
-											entrepreneurship dan keuangan
-											berkelanjutan.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="card h-100 shadow-sm">
-									<div class="card-body text-center">
-										<h5 class="card-title">
-											Fakultas Kedokteran
-										</h5>
-										<p class="card-text">
-											Pendidikan medis lengkap dengan
-											fasilitas rumah sakit terintegrasi
-											untuk praktik klinis.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+        <!-- Section 3: Program Studi -->
+        <div class="row my-5">
+          <div class="col-12">
+            <h2 class="text-center h4 mb-4">Program Studi Unggulan</h2>
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Prodi Teknik</h5>
+                    <p class="card-text">
+                      Program sarjana dan pascasarjana di bidang teknik sipil,
+                      mesin, dan informatika dengan kurikulum berbasis teknologi
+                      terkini.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Prodi Ekonomi</h5>
+                    <p class="card-text">
+                      Belajar manajemen, akuntansi, dan ekonomi dengan fokus
+                      pada entrepreneurship dan keuangan berkelanjutan.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Prodi Kedokteran</h5>
+                    <p class="card-text">
+                      Pendidikan medis lengkap dengan fasilitas rumah sakit
+                      terintegrasi untuk praktik klinis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				<!-- Section 3: Program Studi -->
-				<div class="row my-5">
-					<div class="col-12">
-						<h2 class="text-center h4 mb-4">
-							Program Studi Unggulan
-						</h2>
-						<div class="row g-4">
-							<div class="col-md-4">
-								<div class="card h-100 shadow-sm">
-									<div class="card-body text-center">
-										<h5 class="card-title">
-											Prodi Teknik
-										</h5>
-										<p class="card-text">
-											Program sarjana dan pascasarjana di
-											bidang teknik sipil, mesin, dan
-											informatika dengan kurikulum
-											berbasis teknologi terkini.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="card h-100 shadow-sm">
-									<div class="card-body text-center">
-										<h5 class="card-title">
-											Prodi Ekonomi
-										</h5>
-										<p class="card-text">
-											Belajar manajemen, akuntansi, dan
-											ekonomi dengan fokus pada
-											entrepreneurship dan keuangan
-											berkelanjutan.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="card h-100 shadow-sm">
-									<div class="card-body text-center">
-										<h5 class="card-title">
-											Prodi Kedokteran
-										</h5>
-										<p class="card-text">
-											Pendidikan medis lengkap dengan
-											fasilitas rumah sakit terintegrasi
-											untuk praktik klinis.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Section 4: Fasilitas -->
-				<div class="row my-5">
-					<div class="col-md-8 mx-auto">
-						<div class="card shadow-sm">
-							<div class="card-body">
-								<h2 class="card-title h4 text-center mb-3">
-									Fasilitas Pendukung
-								</h2>
-								<p class="card-text">
-									Kami menyediakan fasilitas modern seperti
-									perpustakaan digital, laboratorium canggih,
-									asrama mahasiswa, dan pusat karir untuk
-									mendukung perjalanan akademik Anda. Kampus
-									kami juga ramah lingkungan dengan area hijau
-									seluas 50 hektar.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-			crossorigin="anonymous"
-		></script>
-	</body>
+        <!-- Section 4: Fasilitas -->
+        <div class="row my-5">
+          <div class="col-md-8 mx-auto">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title h4 text-center mb-3">
+                  Fasilitas Pendukung
+                </h2>
+                <p class="card-text">
+                  Kami menyediakan fasilitas modern seperti perpustakaan
+                  digital, laboratorium canggih, asrama mahasiswa, dan pusat
+                  karir untuk mendukung perjalanan akademik Anda. Kampus kami
+                  juga ramah lingkungan dengan area hijau seluas 50 hektar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
