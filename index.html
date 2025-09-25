@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,122 +17,97 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
-  <body
-    data-bs-spy="scroll"
-    data-bs-target=".navbar"
-    data-bs-offset="80"
-    tabindex="0"
-  >
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
+    
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid px-4">
-        <a class="navbar-brand me-auto" href="#hero">PHP</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              Kelompok 8
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-center flex-grow-1 gap-2">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#hero"
-                  >Beranda</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about-us">Tentang</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#members">Anggota</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#documentation">Dokumentasi</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav" id="nav-univ">
-              <li class="nav-item dropdown">
-                <a class="nav-link text-white" href="university" role="button" aria-expanded="false">University</a>
-              </li>
-            </ul>
-          </div>
+        <div class="container-fluid px-4">
+            <a class="navbar-brand me-auto" href="#hero">PHP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Kelompok 8</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#hero">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#members">Anggota</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#documentation">Dokumentasi</a>
+                        </li>
+                    </ul>
+            </div>
         </div>
-      </div>
     </nav>
     <!-- Navbar end -->
 
-    <!-- Hero section -->
-    <section data-aos="fade-up" class="hero-section" id="hero">
-      <div
-        class="container d-flex align-items-center justify-content-center text-white flex-column text-center"
-      >
-        <h1 class="mb-4">Kelompok 8 PHP</h1>
-        <h2>
-          Membangun solusi web yang inovatif dan profesional dengan teknologi
-          PHP terdepan untuk menciptakan pengalaman digital yang luar biasa.
-        </h2>
-      </div>
-    </section>
-    <!-- Hero section end -->
+		<!-- Hero section -->
+		<section data-aos="fade-up" class="hero-section" id="hero">
+			<div
+				class="container d-flex align-items-center justify-content-center text-white flex-column text-center"
+			>
+				<h1 class="mb-4">Kelompok 8 PHP</h1>
+				<h2>
+					Membangun solusi web yang inovatif dan profesional dengan
+					teknologi PHP terdepan untuk menciptakan pengalaman digital
+					yang luar biasa.
+				</h2>
+			</div>
+		</section>
+		<!-- Hero section end -->
 
-    <!-- About Us Section -->
-    <section data-aos="fade-up" id="about-us">
-      <div class="center-vertical">
-        <div class="about-us-section">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                <div class="img-head">
-                  <img
-                    src="img/hero-bg.jpg"
-                    alt="About us - Team collaboration"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <div class="col-12 col-lg-6">
-                <h2 class="text-head mb-3">TENTANG KAMI</h2>
-                <div class="break-small mb-4"></div>
-                <p class="text-para">
-                  Kami adalah tim yang berdedikasi dalam mengembangkan aplikasi
-                  web menggunakan PHP. Dengan kombinasi kreativitas, teknologi
-                  terdepan, dan semangat kolaborasi, kami berkomitmen untuk
-                  menciptakan solusi digital yang tidak hanya fungsional, tetapi
-                  juga memberikan pengalaman pengguna yang luar biasa.
-                </p>
-                <p class="text-para">
-                  Setiap anggota tim membawa keahlian unik yang saling
-                  melengkapi, mulai dari pengembangan backend yang robust hingga
-                  desain antarmuka yang menarik dan user-friendly.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About section end -->
+		<!-- About Us Section -->
+		<section data-aos="fade-up" id="about-us">
+			<div class="center-vertical">
+				<div class="about-us-section">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-12 col-lg-6 mb-4 mb-lg-0">
+								<div class="img-head">
+									<img
+										src="img/hero-bg.jpg"
+										alt="About us - Team collaboration"
+										class="img-fluid"
+									/>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6">
+								<h2 class="text-head mb-3">TENTANG KAMI</h2>
+								<div class="break-small mb-4"></div>
+								<p class="text-para">
+									Kami adalah tim yang berdedikasi dalam
+									mengembangkan aplikasi web menggunakan PHP.
+									Dengan kombinasi kreativitas, teknologi
+									terdepan, dan semangat kolaborasi, kami
+									berkomitmen untuk menciptakan solusi digital
+									yang tidak hanya fungsional, tetapi juga
+									memberikan pengalaman pengguna yang luar
+									biasa.
+								</p>
+								<p class="text-para">
+									Setiap anggota tim membawa keahlian unik
+									yang saling melengkapi, mulai dari
+									pengembangan backend yang robust hingga
+									desain antarmuka yang menarik dan
+									user-friendly.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About section end -->
 
     <!-- Members -->
     <section data-aos="fade-up" id="members">
@@ -862,59 +837,61 @@
     </section>
     <!-- Documentation end -->
 
-    <!-- AOS JavaScript -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 800,
-        easing: "ease-in-out",
-        once: true,
-        offset: 100,
-      });
-    </script>
+		<!-- AOS JavaScript -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 800,
+				easing: "ease-in-out",
+				once: true,
+				offset: 100,
+			});
+		</script>
 
-    <!-- Bootstrap JavaScript -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+		<!-- Bootstrap JavaScript -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+			crossorigin="anonymous"
+		></script>
 
-    <!-- Custom JavaScript for enhanced interactions -->
-    <script>
-      // Smooth scrolling for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
-          }
-        });
-      });
+		<!-- Custom JavaScript for enhanced interactions -->
+		<script>
+			// Smooth scrolling for navigation links
+			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+				anchor.addEventListener("click", function (e) {
+					e.preventDefault();
+					const target = document.querySelector(
+						this.getAttribute("href"),
+					);
+					if (target) {
+						target.scrollIntoView({
+							behavior: "smooth",
+							block: "start",
+						});
+					}
+				});
+			});
 
-      // Active navigation link highlighting
-      window.addEventListener("scroll", () => {
-        let current = "";
-        const sections = document.querySelectorAll("section[id]");
+			// Active navigation link highlighting
+			window.addEventListener("scroll", () => {
+				let current = "";
+				const sections = document.querySelectorAll("section[id]");
 
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop - 100;
-          if (pageYOffset >= sectionTop) {
-            current = section.getAttribute("id");
-          }
-        });
+				sections.forEach((section) => {
+					const sectionTop = section.offsetTop - 100;
+					if (pageYOffset >= sectionTop) {
+						current = section.getAttribute("id");
+					}
+				});
 
-        document.querySelectorAll(".nav-link").forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${current}`) {
-            link.classList.add("active");
-          }
-        });
-      });
-    </script>
-  </body>
+				document.querySelectorAll(".nav-link").forEach((link) => {
+					link.classList.remove("active");
+					if (link.getAttribute("href") === `#${current}`) {
+						link.classList.add("active");
+					}
+				});
+			});
+		</script>
+	</body>
 </html>
