@@ -8,3 +8,14 @@ root, html, body {
 #title {
 	color: var(--colorOne);
 }
+
+.card { 
+	border-color: var(--colorTwo);
+	border-width: 2px;
+}
+
+.break-small {
+  width: 60px;
+  background: linear-gradient(90deg, var(--colorOne), var(--colorTwo));
+  border-radius: 2px;
+}
