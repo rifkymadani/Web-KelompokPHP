@@ -711,3 +711,39 @@ body {
 .member-card:nth-child(odd) {
   animation-delay: 0.
 }
+
+@media (max-width: 476px) {
+	#offcanvasNavbar {
+		width: 300px;
+		max-width: 80vw;
+		height: 100vh;
+		left: 56px;
+		top: -15px;
+	}
+
+	.offcanvas-backdrop.show {
+		opacity: 0.8;
+		right: 0;
+		top: -15px;
+		left: -15px;
+	}
+
+	.offcanvas-header {
+		background: var(--colorOne);
+		color: white;
+	}
+}
+
+@media (min-width: 768px) {
+	.offcanvas-body {
+		flex-direction: row !important;
+		justify-content: space-between !important;
+	}
+
+	.offcanvas-body > ul {
+		justify-content: center;
+		gap: 4;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
