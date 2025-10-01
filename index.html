@@ -1,64 +1,105 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kelompok 8 PHP - Professional Team Website</title>
-		<link rel="icon" href="data:image/png;base64,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">
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kelompok 8 PHP - Professional Team Website</title>
+		<link
+			rel="icon"
+			href="data:image/png;base64,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"
+		/>
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
+		<!-- AOS -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<base href="/Web-KelompokPHP" />
+	</head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
-    
-    <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg fixed-top">
-				<div class="container-fluid px-5">
-					<a class="navbar-brand me-auto" href="/">PHP</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-						<div class="offcanvas-header">
-							<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-								Kelompok 8
-							</h5>
-							<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-						</div>
-						<div class="offcanvas-body d-flex align-items-center">
-							<ul class="navbar-nav justify-content-center flex-grow-1 gap-4">
-								<li class="nav-item">
-									<a class="nav-link" aria-current="page" href="/university">Universitas</a>
-								</li>
-								<li class="nav-item active">
-									<a class="nav-link" href="faculty.html">Fakultas</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="major.html">Jurusan</a>
-								</li>
-							</ul>
+	<body
+		data-bs-spy="scroll"
+		data-bs-target=".navbar"
+		data-bs-offset="80"
+		tabindex="0"
+	>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container-fluid px-5">
+				<a class="navbar-brand me-auto" href="/">PHP</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasNavbar"
+					aria-controls="offcanvasNavbar"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="offcanvas offcanvas-end"
+					tabindex="-1"
+					id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel"
+				>
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+							Kelompok 8
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="offcanvas-body d-flex align-items-center">
+						<ul
+							class="navbar-nav justify-content-center flex-grow-1 gap-4"
+						>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									aria-current="page"
+									href="/university"
+									>Universitas</a
+								>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="faculty.html"
+									>Fakultas</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="major.html"
+									>Jurusan</a
+								>
+							</li>
+						</ul>
 
-							<ul class="navbar-nav" id="nav-univ">
-								<li class="nav-item">
-									<a class="nav-link text-white" href="#" role="button" aria-expanded="false">
-										University
-									</a>
-								</li>
-							</ul>
-						</div>
+						<ul class="navbar-nav" id="nav-univ">
+							<li class="nav-item">
+								<a
+									class="nav-link text-white"
+									href="#"
+									role="button"
+									aria-expanded="false"
+								>
+									University
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</nav>
-    <!-- Navbar end -->
+			</div>
+		</nav>
+		<!-- Navbar end -->
 
 		<!-- Hero section -->
 		<section data-aos="fade-up" class="hero-section" id="hero">
@@ -94,7 +135,20 @@
 								<h2 class="text-head mb-3">TENTANG KAMI</h2>
 								<div class="break-small mb-4"></div>
 								<p class="text-para">
-								PHP adalah bahasa pemrograman server-side yang digunakan untuk mengembangkan aplikasi web dinamis. PHP pertama kali dikembangkan oleh Rasmus Lerdorf pada tahun 1994. PHP bisa dijalankan di server web (Linux/Windows/macOS). Sangat umum di hosting web, CMS (WordPress, Drupal), aplikasi web back-end. Bahasa PHP banyak digunakan karena Mudah dipelajari, cepat untuk pengembangan web, banyak hosting & library, ekosistem besar & aplikasi produksi. Kode PHP ditulis dalam tag '<?php ... ?>, dieksekusi di server, lalu mengirim HTML ke browser.
+									PHP adalah bahasa pemrograman server-side
+									yang digunakan untuk mengembangkan aplikasi
+									web dinamis. PHP pertama kali dikembangkan
+									oleh Rasmus Lerdorf pada tahun 1994. PHP
+									bisa dijalankan di server web
+									(Linux/Windows/macOS). Sangat umum di
+									hosting web, CMS (WordPress, Drupal),
+									aplikasi web back-end. Bahasa PHP banyak
+									digunakan karena Mudah dipelajari, cepat
+									untuk pengembangan web, banyak hosting &
+									library, ekosistem besar & aplikasi
+									produksi. Kode PHP ditulis dalam tag '<?php
+									... ?>, dieksekusi di server, lalu mengirim
+									HTML ke browser.
 								</p>
 							</div>
 						</div>
@@ -104,733 +158,911 @@
 		</section>
 		<!-- About section end -->
 
-    <!-- Members -->
-    <section data-aos="fade-up" id="members">
-      <div class="container">
-        <h2 class="section-title text-center mb-5">ANGGOTA KELOMPOK</h2>
-        <div class="row justify-content-center">
-          <!-- Member 1 -->
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div class="member-card card border-0">
-              <img
-                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/358fa369-4a9c-4114-ba34-597be6b7b221.png"
-                class="card-img-top member-img"
-                alt="Muhammad Akmal- Project Manager"
-              />
-              <div class="card-body">
-                <h5 class="member-name card-title">Muhammad Akmal (H1)</h5>
-                <p class="card-text">NIM: STU005</p>
-                <p class="card-text">TTL: STU005</p>
-                <p class="card-text">PRODI: STU005</p>
-                <p class="card-text">ANGKATAN: STU005</p>
-                <span class="member-role">Project Manager</span>
-              </div>
-            </div>
-          </div>
+		<!-- Members -->
+		<section data-aos="fade-up" id="members">
+			<div class="container">
+				<h2 class="section-title text-center mb-5">ANGGOTA KELOMPOK</h2>
+				<div class="row justify-content-center">
+					<!-- Member 1 -->
+					<div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="member-card card border-0">
+							<img
+								src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/358fa369-4a9c-4114-ba34-597be6b7b221.png"
+								class="card-img-top member-img"
+								alt="Muhammad Akmal- Project Manager"
+							/>
+							<div class="card-body">
+								<h5 class="member-name card-title">
+									Muhammad Akmal (H1)
+								</h5>
+								<p class="card-text">NIM: STU005</p>
+								<p class="card-text">TTL: STU005</p>
+								<p class="card-text">PRODI: STU005</p>
+								<p class="card-text">ANGKATAN: STU005</p>
+								<span class="member-role">Project Manager</span>
+							</div>
+						</div>
+					</div>
 
-          <!-- Member 2 -->
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div class="member-card card border-0">
-              <img
-                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/749a1081-c1ca-4765-9f7a-af7d05e795a2.png"
-                class="card-img-top member-img"
-                alt="Sarah Williams - Frontend Developer"
-              />
-              <div class="card-body">
-                <h5 class="member-name card-title">Sarah Williams (H2)</h5>
-                <p class="card-text">NIM: STU005</p>
-                <p class="card-text">TTL: STU005</p>
-                <p class="card-text">PRODI: STU005</p>
-                <p class="card-text">ANGKATAN: STU005</p>
-                <span class="member-role">Frontend Developer</span>
-              </div>
-            </div>
-          </div>
+					<!-- Member 2 -->
+					<div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="member-card card border-0">
+							<img
+								src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/749a1081-c1ca-4765-9f7a-af7d05e795a2.png"
+								class="card-img-top member-img"
+								alt="Sarah Williams - Frontend Developer"
+							/>
+							<div class="card-body">
+								<h5 class="member-name card-title">
+									Sarah Williams (H2)
+								</h5>
+								<p class="card-text">NIM: STU005</p>
+								<p class="card-text">TTL: STU005</p>
+								<p class="card-text">PRODI: STU005</p>
+								<p class="card-text">ANGKATAN: STU005</p>
+								<span class="member-role"
+									>Frontend Developer</span
+								>
+							</div>
+						</div>
+					</div>
 
-          <!-- Member 3 -->
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div class="member-card card border-0">
-              <img
-                src="https://placehold.co/400x500/009970/ffffff?text=MC"
-                class="card-img-top member-img"
-                alt="Michael Chen - Backend Developer"
-              />
-              <div class="card-body">
-                <h5 class="member-name card-title">Michael Chen (H3)</h5>
-                <p class="card-text">NIM: STU005</p>
-                <p class="card-text">TTL: STU005</p>
-                <p class="card-text">PRODI: STU005</p>
-                <p class="card-text">ANGKATAN: STU005</p>
-                <span class="member-role">Backend Developer</span>
-              </div>
-            </div>
-          </div>
+					<!-- Member 3 -->
+					<div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="member-card card border-0">
+							<img
+								src="https://placehold.co/400x500/009970/ffffff?text=MC"
+								class="card-img-top member-img"
+								alt="Michael Chen - Backend Developer"
+							/>
+							<div class="card-body">
+								<h5 class="member-name card-title">
+									Michael Chen (H3)
+								</h5>
+								<p class="card-text">NIM: STU005</p>
+								<p class="card-text">TTL: STU005</p>
+								<p class="card-text">PRODI: STU005</p>
+								<p class="card-text">ANGKATAN: STU005</p>
+								<span class="member-role"
+									>Backend Developer</span
+								>
+							</div>
+						</div>
+					</div>
 
-          <!-- Member 4 -->
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div class="member-card card border-0">
-              <img
-                src="https://placehold.co/400x500/00b383/ffffff?text=ED"
-                class="card-img-top member-img"
-                alt="Emily Davis - UI/UX Designer"
-              />
-              <div class="card-body">
-                <h5 class="member-name card-title">Emily Davis (H4)</h5>
-                <p class="card-text">NIM: STU005</p>
-                <p class="card-text">TTL: STU005</p>
-                <p class="card-text">PRODI: STU005</p>
-                <p class="card-text">ANGKATAN: STU005</p>
-                <span class="member-role">UI/UX Designer</span>
-              </div>
-            </div>
-          </div>
+					<!-- Member 4 -->
+					<div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="member-card card border-0">
+							<img
+								src="https://placehold.co/400x500/00b383/ffffff?text=ED"
+								class="card-img-top member-img"
+								alt="Emily Davis - UI/UX Designer"
+							/>
+							<div class="card-body">
+								<h5 class="member-name card-title">
+									Emily Davis (H4)
+								</h5>
+								<p class="card-text">NIM: STU005</p>
+								<p class="card-text">TTL: STU005</p>
+								<p class="card-text">PRODI: STU005</p>
+								<p class="card-text">ANGKATAN: STU005</p>
+								<span class="member-role">UI/UX Designer</span>
+							</div>
+						</div>
+					</div>
 
-          <!-- Member 5 -->
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div class="member-card card border-0">
-              <img
-                src="https://placehold.co/400x500/009970/ffffff?text=JD"
-                class="card-img-top member-img"
-                alt="John Doe - Full Stack Developer"
-              />
-              <div class="card-body">
-                <h5 class="member-name card-title">John Doe (H5)</h5>
-                <p class="card-text">NIM: STU005</p>
-                <p class="card-text">TTL: STU005</p>
-                <p class="card-text">PRODI: STU005</p>
-                <p class="card-text">ANGKATAN: STU005</p>
-                <span class="member-role">Full Stack Developer</span>
-              </div>
-            </div>
-          </div>
+					<!-- Member 5 -->
+					<div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="member-card card border-0">
+							<img
+								src="https://placehold.co/400x500/009970/ffffff?text=JD"
+								class="card-img-top member-img"
+								alt="John Doe - Full Stack Developer"
+							/>
+							<div class="card-body">
+								<h5 class="member-name card-title">
+									John Doe (H5)
+								</h5>
+								<p class="card-text">NIM: STU005</p>
+								<p class="card-text">TTL: STU005</p>
+								<p class="card-text">PRODI: STU005</p>
+								<p class="card-text">ANGKATAN: STU005</p>
+								<span class="member-role"
+									>Full Stack Developer</span
+								>
+							</div>
+						</div>
+					</div>
 
-          <!-- Member 6 -->
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div class="member-card card border-0">
-              <img
-                src="https://placehold.co/400x500/00b383/ffffff?text=JS"
-                class="card-img-top member-img"
-                alt="Jane Smith - Database Administrator"
-              />
-              <div class="card-body">
-                <h5 class="member-name card-title">Jane Smith (H6)</h5>
-                <p class="card-text">NIM: STU005</p>
-                <p class="card-text">TTL: STU005</p>
-                <p class="card-text">PRODI: STU005</p>
-                <p class="card-text">ANGKATAN: STU005</p>
-                <span class="member-role">Database Administrator</span>
-              </div>
-            </div>
-          </div>
+					<!-- Member 6 -->
+					<div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="member-card card border-0">
+							<img
+								src="https://placehold.co/400x500/00b383/ffffff?text=JS"
+								class="card-img-top member-img"
+								alt="Jane Smith - Database Administrator"
+							/>
+							<div class="card-body">
+								<h5 class="member-name card-title">
+									Jane Smith (H6)
+								</h5>
+								<p class="card-text">NIM: STU005</p>
+								<p class="card-text">TTL: STU005</p>
+								<p class="card-text">PRODI: STU005</p>
+								<p class="card-text">ANGKATAN: STU005</p>
+								<span class="member-role"
+									>Database Administrator</span
+								>
+							</div>
+						</div>
+					</div>
 
-          <!-- Member 7 -->
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div class="member-card card border-0">
-              <img
-                src="https://placehold.co/400x500/009970/ffffff?text=RB"
-                class="card-img-top member-img"
-                alt="Robert Brown - Quality Assurance"
-              />
-              <div class="card-body">
-                <h5 class="member-name card-title">Robert Brown (H7)</h5>
-                <p class="card-text">NIM: STU005</p>
-                <p class="card-text">TTL: STU005</p>
-                <p class="card-text">PRODI: STU005</p>
-                <p class="card-text">ANGKATAN: STU005</p>
-                <span class="member-role">Quality Assurance</span>
-              </div>
-            </div>
-          </div>
+					<!-- Member 7 -->
+					<div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="member-card card border-0">
+							<img
+								src="https://placehold.co/400x500/009970/ffffff?text=RB"
+								class="card-img-top member-img"
+								alt="Robert Brown - Quality Assurance"
+							/>
+							<div class="card-body">
+								<h5 class="member-name card-title">
+									Robert Brown (H7)
+								</h5>
+								<p class="card-text">NIM: STU005</p>
+								<p class="card-text">TTL: STU005</p>
+								<p class="card-text">PRODI: STU005</p>
+								<p class="card-text">ANGKATAN: STU005</p>
+								<span class="member-role"
+									>Quality Assurance</span
+								>
+							</div>
+						</div>
+					</div>
 
-          <!-- Member 8 -->
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div class="member-card card border-0">
-              <img
-                src="https://placehold.co/400x500/00b383/ffffff?text=LW"
-                class="card-img-top member-img"
-                alt="Lisa Wang - DevOps Engineer"
-              />
-              <div class="card-body">
-                <h5 class="member-name card-title">Lisa Wang (H8)</h5>
-                <p class="card-text">NIM: STU005</p>
-                <p class="card-text">TTL: STU005</p>
-                <p class="card-text">PRODI: STU005</p>
-                <p class="card-text">ANGKATAN: STU005</p>
-                <span class="member-role">DevOps Engineer</span>
-              </div>
-            </div>
-          </div>
+					<!-- Member 8 -->
+					<div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="member-card card border-0">
+							<img
+								src="https://placehold.co/400x500/00b383/ffffff?text=LW"
+								class="card-img-top member-img"
+								alt="Lisa Wang - DevOps Engineer"
+							/>
+							<div class="card-body">
+								<h5 class="member-name card-title">
+									Lisa Wang (H8)
+								</h5>
+								<p class="card-text">NIM: STU005</p>
+								<p class="card-text">TTL: STU005</p>
+								<p class="card-text">PRODI: STU005</p>
+								<p class="card-text">ANGKATAN: STU005</p>
+								<span class="member-role">DevOps Engineer</span>
+							</div>
+						</div>
+					</div>
 
-          <!-- Member 9 -->
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div class="member-card card border-0">
-              <img
-                src="https://placehold.co/400x500/00b383/ffffff?text=LW"
-                class="card-img-top member-img"
-                alt="Mochamad Rifky madani Mulyana - DevOps Engineer"
-              />
-              <div class="card-body">
-                <h5 class="member-name card-title">Mochamad Rifky madani Mulyana (H9)</h5>
-                <p class="card-text">NIM: 1257050097</p>
-                <p class="card-text">TTL: BANDUNG, 20 MEI 2006</p>
-                <p class="card-text">PRODI: TEKNIK INFORMATIKA</p>
-                <p class="card-text">ANGKATAN: 2025</p>
-                <span class="member-role">DevOps Engineer</span>
-              </div>
-            </div>
-          </div>
+					<!-- Member 9 -->
+					<div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="member-card card border-0">
+							<img
+								src="https://placehold.co/400x500/00b383/ffffff?text=LW"
+								class="card-img-top member-img"
+								alt="Mochamad Rifky madani Mulyana - DevOps Engineer"
+							/>
+							<div class="card-body">
+								<h5 class="member-name card-title">
+									Mochamad Rifky madani Mulyana (H9)
+								</h5>
+								<p class="card-text">NIM: 1257050097</p>
+								<p class="card-text">
+									TTL: BANDUNG, 20 MEI 2006
+								</p>
+								<p class="card-text">
+									PRODI: TEKNIK INFORMATIKA
+								</p>
+								<p class="card-text">ANGKATAN: 2025</p>
+								<span class="member-role">DevOps Engineer</span>
+							</div>
+						</div>
+					</div>
 
-          <!-- Member 10 -->
-          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div class="member-card card border-0">
-              <img
-                src="https://placehold.co/400x500/00b383/ffffff?text=LW"
-                class="card-img-top member-img"
-                alt="Lisa Wang - DevOps Engineer"
-              />
-              <div class="card-body">
-                <h5 class="member-name card-title">Lisa Wang (h10)</h5>
-                <p class="card-text">NIM: STU005</p>
-                <p class="card-text">TTL: STU005</p>
-                <p class="card-text">PRODI: STU005</p>
-                <p class="card-text">ANGKATAN: STU005</p>
-                <span class="member-role">DevOps Engineer</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Members end -->
+					<!-- Member 10 -->
+					<div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="member-card card border-0">
+							<img
+								src="https://placehold.co/400x500/00b383/ffffff?text=LW"
+								class="card-img-top member-img"
+								alt="Lisa Wang - DevOps Engineer"
+							/>
+							<div class="card-body">
+								<h5 class="member-name card-title">
+									Lisa Wang (h10)
+								</h5>
+								<p class="card-text">NIM: STU005</p>
+								<p class="card-text">TTL: STU005</p>
+								<p class="card-text">PRODI: STU005</p>
+								<p class="card-text">ANGKATAN: STU005</p>
+								<span class="member-role">DevOps Engineer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Members end -->
 
-    <!-- Documentation Section -->
-    <section data-aos="fade-up" id="documentation">
-      <div class="documentation-section">
-        <div class="container">
-          <h2 class="section-title text-center mb-1">
-            DOKUMENTASI PEMBELAJARAN
-          </h2>
-          <div class="break-small mb-5"></div>
+		<!-- Documentation Section -->
+		<section data-aos="fade-up" id="documentation">
+			<div class="documentation-section">
+				<div class="container">
+					<h2 class="section-title text-center mb-1">
+						DOKUMENTASI PEMBELAJARAN
+					</h2>
+					<div class="break-small mb-5"></div>
 
-          <!-- Pertemuan ke 1 -->
-          <div
-            class="meeting-card mb-5"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="meeting-header">
-              <h3 class="meeting-title">Pertemuan 1 - Pengenalan PHP Dasar</h3>
-              <span class="meeting-date">15 September 2024</span>
-            </div>
+					<!-- Pertemuan ke 1 -->
+					<div
+						class="meeting-card mb-5"
+						data-aos="fade-up"
+						data-aos-delay="100"
+					>
+						<div class="meeting-header">
+							<h3 class="meeting-title">
+								Pertemuan 1 - Pengenalan PHP Dasar
+							</h3>
+							<span class="meeting-date">15 September 2024</span>
+						</div>
 
-            <div class="row justify-content-center">
-              <!-- Pemateri 1  -->
-              <div class="col-lg-4 mb-4">
-                <div class="presenter-card">
-                  <div class="presenter-photo">
-                    <img
-                      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/358fa369-4a9c-4114-ba34-597be6b7b221.png"
-                      alt="Meeting 1 Documentation"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="presenter-info">
-                    <h5 class="presenter-name">Dr. Ahmad Sutisna</h5>
-                    <p class="presenter-role">Pemateri</p>
-                    <hr class="divider" />
-                    <h6 class="moderator-name">Sarah Williams</h6>
-                    <p class="moderator-role">Moderator</p>
-                  </div>
-                </div>
-              </div>
+						<div class="row justify-content-center">
+							<!-- Pemateri 1  -->
+							<div class="col-lg-4 mb-4">
+								<div class="presenter-card">
+									<div class="presenter-photo">
+										<img
+											src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/358fa369-4a9c-4114-ba34-597be6b7b221.png"
+											alt="Meeting 1 Documentation"
+											class="img-fluid"
+										/>
+									</div>
+									<div class="presenter-info">
+										<h5 class="presenter-name">
+											Dr. Ahmad Sutisna
+										</h5>
+										<p class="presenter-role">Pemateri</p>
+										<hr class="divider" />
+										<h6 class="moderator-name">
+											Sarah Williams
+										</h6>
+										<p class="moderator-role">Moderator</p>
+									</div>
+								</div>
+							</div>
 
-              <!-- Pemateri 2 -->
-              <div class="col-lg-4 mb-4">
-                <div class="presenter-card">
-                  <div class="presenter-photo">
-                    <img
-                      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/358fa369-4a9c-4114-ba34-597be6b7b221.png"
-                      alt="Meeting 1 Documentation"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="presenter-info">
-                    <h5 class="presenter-name">Dr. Ahmad Sutisna</h5>
-                    <p class="presenter-role">Pemateri</p>
-                    <hr class="divider" />
-                    <h6 class="moderator-name">Sarah Williams</h6>
-                    <p class="moderator-role">Moderator</p>
-                  </div>
-                </div>
-              </div>
+							<!-- Pemateri 2 -->
+							<div class="col-lg-4 mb-4">
+								<div class="presenter-card">
+									<div class="presenter-photo">
+										<img
+											src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/358fa369-4a9c-4114-ba34-597be6b7b221.png"
+											alt="Meeting 1 Documentation"
+											class="img-fluid"
+										/>
+									</div>
+									<div class="presenter-info">
+										<h5 class="presenter-name">
+											Dr. Ahmad Sutisna
+										</h5>
+										<p class="presenter-role">Pemateri</p>
+										<hr class="divider" />
+										<h6 class="moderator-name">
+											Sarah Williams
+										</h6>
+										<p class="moderator-role">Moderator</p>
+									</div>
+								</div>
+							</div>
 
-              <!-- content 1 -->
-              <div class="col-lg-8">
-                <div class="content-tabs">
-                  <ul
-                    class="nav nav-tabs mb-3"
-                    id="meeting1Tabs"
-                    role="tablist"
-                  >
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link active"
-                        id="materi1-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#materi1"
-                        type="button"
-                        role="tab"
-                      >
-                        Materi
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="tugas1-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#tugas1"
-                        type="button"
-                        role="tab"
-                      >
-                        Tugas
-                      </button>
-                    </li>
-                  </ul>
+							<!-- content 1 -->
+							<div class="col-lg-8">
+								<div class="content-tabs">
+									<ul
+										class="nav nav-tabs mb-3"
+										id="meeting1Tabs"
+										role="tablist"
+									>
+										<li
+											class="nav-item"
+											role="presentation"
+										>
+											<button
+												class="nav-link active"
+												id="materi1-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#materi1"
+												type="button"
+												role="tab"
+											>
+												Materi
+											</button>
+										</li>
+										<li
+											class="nav-item"
+											role="presentation"
+										>
+											<button
+												class="nav-link"
+												id="tugas1-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#tugas1"
+												type="button"
+												role="tab"
+											>
+												Tugas
+											</button>
+										</li>
+									</ul>
 
-                  <!-- Materi pertemuan 1 -->
-                  <div class="tab-content" id="meeting1TabContent">
-                    <div
-                      class="tab-pane fade show active"
-                      id="materi1"
-                      role="tabpanel"
-                    >
-                      <div class="content-card">
-                        <h5 class="content-title">Rangkuman Materi</h5>
-                        <ul class="content-list">
-                          <li>
-                            <strong>Pengenalan PHP</strong>: Sejarah,
-                            karakteristik, dan keunggulan PHP sebagai bahasa
-                            pemrograman server-side
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+									<!-- Materi pertemuan 1 -->
+									<div
+										class="tab-content"
+										id="meeting1TabContent"
+									>
+										<div
+											class="tab-pane fade show active"
+											id="materi1"
+											role="tabpanel"
+										>
+											<div class="content-card">
+												<h5 class="content-title">
+													Rangkuman Materi
+												</h5>
+												<ul class="content-list">
+													<li>
+														<strong
+															>Pengenalan
+															PHP</strong
+														>: Sejarah,
+														karakteristik, dan
+														keunggulan PHP sebagai
+														bahasa pemrograman
+														server-side
+													</li>
+												</ul>
+											</div>
+										</div>
 
-                    <!-- Tugas pertemuan 1 -->
-                    <div class="tab-pane fade" id="tugas1" role="tabpanel">
-                      <div class="content-card">
-                        <h5 class="content-title">Tugas Pertemuan 1</h5>
-                        <div class="assignment-item">
-                          <h6>1. Instalasi dan Setup Environment</h6>
-                          <p>
-                            Install XAMPP dan buat halaman PHP pertama yang
-                            menampilkan "Hello World" dengan informasi sistem
-                            menggunakan phpinfo().
-                          </p>
-                        </div>
-                        <div class="deadline">
-                          <strong>Deadline:</strong>
-                          22 September 2024, 23:59 WIB
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+										<!-- Tugas pertemuan 1 -->
+										<div
+											class="tab-pane fade"
+											id="tugas1"
+											role="tabpanel"
+										>
+											<div class="content-card">
+												<h5 class="content-title">
+													Tugas Pertemuan 1
+												</h5>
+												<div class="assignment-item">
+													<h6>
+														1. Instalasi dan Setup
+														Environment
+													</h6>
+													<p>
+														Install XAMPP dan buat
+														halaman PHP pertama yang
+														menampilkan "Hello
+														World" dengan informasi
+														sistem menggunakan
+														phpinfo().
+													</p>
+												</div>
+												<div class="deadline">
+													<strong>Deadline:</strong>
+													22 September 2024, 23:59 WIB
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-          <!-- Pertemuan ke 2 -->
-          <div
-            class="meeting-card mb-5"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="meeting-header">
-              <h3 class="meeting-title">
-                Pertemuan 2 - Struktur Kontrol dan Fungsi
-              </h3>
-              <span class="meeting-date">22 September 2024</span>
-            </div>
+					<!-- Pertemuan ke 2 -->
+					<div
+						class="meeting-card mb-5"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
+						<div class="meeting-header">
+							<h3 class="meeting-title">
+								Pertemuan 2 - Struktur Kontrol dan Fungsi
+							</h3>
+							<span class="meeting-date">22 September 2024</span>
+						</div>
 
-            <div class="row justify-content-center">
-              <!-- Pemateri 1 -->
-              <div class="col-lg-4 mb-4">
-                <div class="presenter-card">
-                  <div class="presenter-photo">
-                    <img
-                      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/749a1081-c1ca-4765-9f7a-af7d05e795a2.png"
-                      alt="Pemateri 1 Documentation"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="presenter-info">
-                    <h5 class="presenter-name">Prof. Indira Sari, M.Kom</h5>
-                    <p class="presenter-role">Pemateri</p>
-                    <hr class="divider" />
-                    <h6 class="moderator-name">Michael Chen</h6>
-                    <p class="moderator-role">Moderator</p>
-                  </div>
-                </div>
-              </div>
+						<div class="row justify-content-center">
+							<!-- Pemateri 1 -->
+							<div class="col-lg-4 mb-4">
+								<div class="presenter-card">
+									<div class="presenter-photo">
+										<img
+											src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/749a1081-c1ca-4765-9f7a-af7d05e795a2.png"
+											alt="Pemateri 1 Documentation"
+											class="img-fluid"
+										/>
+									</div>
+									<div class="presenter-info">
+										<h5 class="presenter-name">
+											Prof. Indira Sari, M.Kom
+										</h5>
+										<p class="presenter-role">Pemateri</p>
+										<hr class="divider" />
+										<h6 class="moderator-name">
+											Michael Chen
+										</h6>
+										<p class="moderator-role">Moderator</p>
+									</div>
+								</div>
+							</div>
 
-              <!-- Pemateri 2 -->
-              <div class="col-lg-4 mb-4">
-                <div class="presenter-card">
-                  <div class="presenter-photo">
-                    <img
-                      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/749a1081-c1ca-4765-9f7a-af7d05e795a2.png"
-                      alt="Pemateri 2 Documentation"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="presenter-info">
-                    <h5 class="presenter-name">Prof. Indira Sari, M.Kom</h5>
-                    <p class="presenter-role">Pemateri</p>
-                    <hr class="divider" />
-                    <h6 class="moderator-name">Michael Chen</h6>
-                    <p class="moderator-role">Moderator</p>
-                  </div>
-                </div>
-              </div>
+							<!-- Pemateri 2 -->
+							<div class="col-lg-4 mb-4">
+								<div class="presenter-card">
+									<div class="presenter-photo">
+										<img
+											src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/749a1081-c1ca-4765-9f7a-af7d05e795a2.png"
+											alt="Pemateri 2 Documentation"
+											class="img-fluid"
+										/>
+									</div>
+									<div class="presenter-info">
+										<h5 class="presenter-name">
+											Prof. Indira Sari, M.Kom
+										</h5>
+										<p class="presenter-role">Pemateri</p>
+										<hr class="divider" />
+										<h6 class="moderator-name">
+											Michael Chen
+										</h6>
+										<p class="moderator-role">Moderator</p>
+									</div>
+								</div>
+							</div>
 
-              <!-- content 2-->
-              <div class="col-lg-8">
-                <div class="content-tabs">
-                  <ul
-                    class="nav nav-tabs mb-3"
-                    id="meeting2Tabs"
-                    role="tablist"
-                  >
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link active"
-                        id="materi2-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#materi2"
-                        type="button"
-                        role="tab"
-                      >
-                        Materi
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="tugas2-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#tugas2"
-                        type="button"
-                        role="tab"
-                      >
-                        Tugas
-                      </button>
-                    </li>
-                  </ul>
+							<!-- content 2-->
+							<div class="col-lg-8">
+								<div class="content-tabs">
+									<ul
+										class="nav nav-tabs mb-3"
+										id="meeting2Tabs"
+										role="tablist"
+									>
+										<li
+											class="nav-item"
+											role="presentation"
+										>
+											<button
+												class="nav-link active"
+												id="materi2-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#materi2"
+												type="button"
+												role="tab"
+											>
+												Materi
+											</button>
+										</li>
+										<li
+											class="nav-item"
+											role="presentation"
+										>
+											<button
+												class="nav-link"
+												id="tugas2-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#tugas2"
+												type="button"
+												role="tab"
+											>
+												Tugas
+											</button>
+										</li>
+									</ul>
 
-                  <!-- materi pertemuan 2 -->
-                  <div class="tab-content" id="meeting2TabContent">
-                    <div
-                      class="tab-pane fade show active"
-                      id="materi2"
-                      role="tabpanel"
-                    >
-                      <div class="content-card">
-                        <h5 class="content-title">Rangkuman Materi</h5>
-                        <ul class="content-list">
-                          <li>
-                            <strong>Perulangan (Loop)</strong>: For, while,
-                            do-while, dan foreach untuk array
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+									<!-- materi pertemuan 2 -->
+									<div
+										class="tab-content"
+										id="meeting2TabContent"
+									>
+										<div
+											class="tab-pane fade show active"
+											id="materi2"
+											role="tabpanel"
+										>
+											<div class="content-card">
+												<h5 class="content-title">
+													Rangkuman Materi
+												</h5>
+												<ul class="content-list">
+													<li>
+														<strong
+															>Perulangan
+															(Loop)</strong
+														>: For, while, do-while,
+														dan foreach untuk array
+													</li>
+												</ul>
+											</div>
+										</div>
 
-                    <!-- Tugas pertemuan 2 -->
-                    <div class="tab-pane fade" id="tugas2" role="tabpanel">
-                      <div class="content-card">
-                        <h5 class="content-title">Tugas Pertemuan 2</h5>
-                        <div class="assignment-item">
-                          <h6>1. Pattern Generator</h6>
-                          <p>
-                            Buat program yang menghasilkan berbagai pola
-                            (segitiga, persegi, diamond) menggunakan nested loop
-                            dengan input dari user.
-                          </p>
-                        </div>
-                        <div class="deadline">
-                          <strong>Deadline:</strong>
-                          29 September 2024, 23:59 WIB
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+										<!-- Tugas pertemuan 2 -->
+										<div
+											class="tab-pane fade"
+											id="tugas2"
+											role="tabpanel"
+										>
+											<div class="content-card">
+												<h5 class="content-title">
+													Tugas Pertemuan 2
+												</h5>
+												<div class="assignment-item">
+													<h6>
+														1. Pattern Generator
+													</h6>
+													<p>
+														Buat program yang
+														menghasilkan berbagai
+														pola (segitiga, persegi,
+														diamond) menggunakan
+														nested loop dengan input
+														dari user.
+													</p>
+												</div>
+												<div class="deadline">
+													<strong>Deadline:</strong>
+													29 September 2024, 23:59 WIB
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-          <!-- Petemuan ke 3 -->
-          <div
-            class="meeting-card mb-5"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="meeting-header">
-              <h3 class="meeting-title">
-                Pertemuan 3 - Array dan Manipulasi Data
-              </h3>
-              <span class="meeting-date">29 September 2024</span>
-            </div>
+					<!-- Petemuan ke 3 -->
+					<div
+						class="meeting-card mb-5"
+						data-aos="fade-up"
+						data-aos-delay="300"
+					>
+						<div class="meeting-header">
+							<h3 class="meeting-title">
+								Pertemuan 3 - Array dan Manipulasi Data
+							</h3>
+							<span class="meeting-date">29 September 2024</span>
+						</div>
 
-            <div class="row justify-content-center">
-              <!-- Pemateri 1 -->
-              <div class="col-lg-4 mb-4">
-                <div class="presenter-card">
-                  <div class="presenter-photo">
-                    <img
-                      src="https://placehold.co/400x500/009970/ffffff?text=DR.+RIZKI"
-                      alt="Meeting 3 Documentation"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="presenter-info">
-                    <h5 class="presenter-name">Dr. Rizki Pratama</h5>
-                    <p class="presenter-role">Pemateri</p>
-                    <hr class="divider" />
-                    <h6 class="moderator-name">Emily Davis</h6>
-                    <p class="moderator-role">Moderator</p>
-                  </div>
-                </div>
-              </div>
+						<div class="row justify-content-center">
+							<!-- Pemateri 1 -->
+							<div class="col-lg-4 mb-4">
+								<div class="presenter-card">
+									<div class="presenter-photo">
+										<img
+											src="https://placehold.co/400x500/009970/ffffff?text=DR.+RIZKI"
+											alt="Meeting 3 Documentation"
+											class="img-fluid"
+										/>
+									</div>
+									<div class="presenter-info">
+										<h5 class="presenter-name">
+											Dr. Rizki Pratama
+										</h5>
+										<p class="presenter-role">Pemateri</p>
+										<hr class="divider" />
+										<h6 class="moderator-name">
+											Emily Davis
+										</h6>
+										<p class="moderator-role">Moderator</p>
+									</div>
+								</div>
+							</div>
 
-              <!-- Pemateri 2 -->
-              <div class="col-lg-4 mb-4">
-                <div class="presenter-card">
-                  <div class="presenter-photo">
-                    <img
-                      src="https://placehold.co/400x500/009970/ffffff?text=DR.+RIZKI"
-                      alt="Meeting 3 Documentation"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="presenter-info">
-                    <h5 class="presenter-name">Dr. Rizki Pratama</h5>
-                    <p class="presenter-role">Pemateri</p>
-                    <hr class="divider" />
-                    <h6 class="moderator-name">Emily Davis</h6>
-                    <p class="moderator-role">Moderator</p>
-                  </div>
-                </div>
-              </div>
+							<!-- Pemateri 2 -->
+							<div class="col-lg-4 mb-4">
+								<div class="presenter-card">
+									<div class="presenter-photo">
+										<img
+											src="https://placehold.co/400x500/009970/ffffff?text=DR.+RIZKI"
+											alt="Meeting 3 Documentation"
+											class="img-fluid"
+										/>
+									</div>
+									<div class="presenter-info">
+										<h5 class="presenter-name">
+											Dr. Rizki Pratama
+										</h5>
+										<p class="presenter-role">Pemateri</p>
+										<hr class="divider" />
+										<h6 class="moderator-name">
+											Emily Davis
+										</h6>
+										<p class="moderator-role">Moderator</p>
+									</div>
+								</div>
+							</div>
 
-              <!-- Content 3 -->
-              <div class="col-lg-8">
-                <div class="content-tabs">
-                  <ul
-                    class="nav nav-tabs mb-3"
-                    id="meeting3Tabs"
-                    role="tablist"
-                  >
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link active"
-                        id="materi3-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#materi3"
-                        type="button"
-                        role="tab"
-                      >
-                        Materi
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="tugas3-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#tugas3"
-                        type="button"
-                        role="tab"
-                      >
-                        Tugas
-                      </button>
-                    </li>
-                  </ul>
+							<!-- Content 3 -->
+							<div class="col-lg-8">
+								<div class="content-tabs">
+									<ul
+										class="nav nav-tabs mb-3"
+										id="meeting3Tabs"
+										role="tablist"
+									>
+										<li
+											class="nav-item"
+											role="presentation"
+										>
+											<button
+												class="nav-link active"
+												id="materi3-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#materi3"
+												type="button"
+												role="tab"
+											>
+												Materi
+											</button>
+										</li>
+										<li
+											class="nav-item"
+											role="presentation"
+										>
+											<button
+												class="nav-link"
+												id="tugas3-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#tugas3"
+												type="button"
+												role="tab"
+											>
+												Tugas
+											</button>
+										</li>
+									</ul>
 
-                  <!-- Materi Pertemuan 3 -->
-                  <div class="tab-content" id="meeting3TabContent">
-                    <div
-                      class="tab-pane fade show active"
-                      id="materi3"
-                      role="tabpanel"
-                    >
-                      <div class="content-card">
-                        <h5 class="content-title">Rangkuman Materi</h5>
-                        <ul class="content-list">
-                          <li>
-                            <strong>Array Multidimensi</strong>: Konsep dan
-                            implementasi array 2D, 3D, dan nested array
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+									<!-- Materi Pertemuan 3 -->
+									<div
+										class="tab-content"
+										id="meeting3TabContent"
+									>
+										<div
+											class="tab-pane fade show active"
+											id="materi3"
+											role="tabpanel"
+										>
+											<div class="content-card">
+												<h5 class="content-title">
+													Rangkuman Materi
+												</h5>
+												<ul class="content-list">
+													<li>
+														<strong
+															>Array
+															Multidimensi</strong
+														>: Konsep dan
+														implementasi array 2D,
+														3D, dan nested array
+													</li>
+												</ul>
+											</div>
+										</div>
 
-                    <!-- Tugas Pertemuan 3 -->
-                    <div class="tab-pane fade" id="tugas3" role="tabpanel">
-                      <div class="content-card">
-                        <h5 class="content-title">Tugas Pertemuan 3</h5>
-                        <div class="assignment-item">
-                          <h6>1. Student Grade Management</h6>
-                          <p>
-                            Buat sistem manajemen nilai siswa menggunakan
-                            multidimensional array dengan fitur: input nilai,
-                            hitung rata-rata, ranking, dan export ke JSON.
-                          </p>
-                        </div>
-                        <div class="deadline">
-                          <strong>Deadline:</strong> 6 Oktober 2024, 23:59 WIB
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+										<!-- Tugas Pertemuan 3 -->
+										<div
+											class="tab-pane fade"
+											id="tugas3"
+											role="tabpanel"
+										>
+											<div class="content-card">
+												<h5 class="content-title">
+													Tugas Pertemuan 3
+												</h5>
+												<div class="assignment-item">
+													<h6>
+														1. Student Grade
+														Management
+													</h6>
+													<p>
+														Buat sistem manajemen
+														nilai siswa menggunakan
+														multidimensional array
+														dengan fitur: input
+														nilai, hitung rata-rata,
+														ranking, dan export ke
+														JSON.
+													</p>
+												</div>
+												<div class="deadline">
+													<strong>Deadline:</strong> 6
+													Oktober 2024, 23:59 WIB
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-          <!-- Pertemuan ke 4 -->
-          <div
-            class="meeting-card mb-5"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div class="meeting-header">
-              <h3 class="meeting-title">
-                Pertemuan 4 - Form Handling dan Validasi
-              </h3>
-              <span class="meeting-date">6 Oktober 2024</span>
-            </div>
+					<!-- Pertemuan ke 4 -->
+					<div
+						class="meeting-card mb-5"
+						data-aos="fade-up"
+						data-aos-delay="400"
+					>
+						<div class="meeting-header">
+							<h3 class="meeting-title">
+								Pertemuan 4 - Form Handling dan Validasi
+							</h3>
+							<span class="meeting-date">6 Oktober 2024</span>
+						</div>
 
-            <div class="row justify-content-center">
-              <!-- Pemateri 1 -->
-              <div class="col-lg-4 mb-4">
-                <div class="presenter-card">
-                  <div class="presenter-photo">
-                    <img
-                      src="https://placehold.co/400x500/00b383/ffffff?text=MS.+DIANA"
-                      alt="Meeting 4 Documentation"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="presenter-info">
-                    <h5 class="presenter-name">Ms. Diana Kusuma</h5>
-                    <p class="presenter-role">Pemateri</p>
-                    <hr class="divider" />
-                    <h6 class="moderator-name">Alex Johnson</h6>
-                    <p class="moderator-role">Moderator</p>
-                  </div>
-                </div>
-              </div>
+						<div class="row justify-content-center">
+							<!-- Pemateri 1 -->
+							<div class="col-lg-4 mb-4">
+								<div class="presenter-card">
+									<div class="presenter-photo">
+										<img
+											src="https://placehold.co/400x500/00b383/ffffff?text=MS.+DIANA"
+											alt="Meeting 4 Documentation"
+											class="img-fluid"
+										/>
+									</div>
+									<div class="presenter-info">
+										<h5 class="presenter-name">
+											Ms. Diana Kusuma
+										</h5>
+										<p class="presenter-role">Pemateri</p>
+										<hr class="divider" />
+										<h6 class="moderator-name">
+											Alex Johnson
+										</h6>
+										<p class="moderator-role">Moderator</p>
+									</div>
+								</div>
+							</div>
 
-              <!-- Pemateri 2 -->
-              <div class="col-lg-4 mb-4">
-                <div class="presenter-card">
-                  <div class="presenter-photo">
-                    <img
-                      src="https://placehold.co/400x500/00b383/ffffff?text=MS.+DIANA"
-                      alt="Meeting 4 Documentation"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="presenter-info">
-                    <h5 class="presenter-name">Ms. Diana Kusuma</h5>
-                    <p class="presenter-role">Pemateri</p>
-                    <hr class="divider" />
-                    <h6 class="moderator-name">Alex Johnson</h6>
-                    <p class="moderator-role">Moderator</p>
-                  </div>
-                </div>
-              </div>
+							<!-- Pemateri 2 -->
+							<div class="col-lg-4 mb-4">
+								<div class="presenter-card">
+									<div class="presenter-photo">
+										<img
+											src="https://placehold.co/400x500/00b383/ffffff?text=MS.+DIANA"
+											alt="Meeting 4 Documentation"
+											class="img-fluid"
+										/>
+									</div>
+									<div class="presenter-info">
+										<h5 class="presenter-name">
+											Ms. Diana Kusuma
+										</h5>
+										<p class="presenter-role">Pemateri</p>
+										<hr class="divider" />
+										<h6 class="moderator-name">
+											Alex Johnson
+										</h6>
+										<p class="moderator-role">Moderator</p>
+									</div>
+								</div>
+							</div>
 
-              <!-- Content 4 -->
-              <div class="col-lg-8">
-                <div class="content-tabs">
-                  <ul
-                    class="nav nav-tabs mb-3"
-                    id="meeting4Tabs"
-                    role="tablist"
-                  >
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link active"
-                        id="materi4-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#materi4"
-                        type="button"
-                        role="tab"
-                      >
-                        Materi
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button
-                        class="nav-link"
-                        id="tugas4-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#tugas4"
-                        type="button"
-                        role="tab"
-                      >
-                        Tugas
-                      </button>
-                    </li>
-                  </ul>
+							<!-- Content 4 -->
+							<div class="col-lg-8">
+								<div class="content-tabs">
+									<ul
+										class="nav nav-tabs mb-3"
+										id="meeting4Tabs"
+										role="tablist"
+									>
+										<li
+											class="nav-item"
+											role="presentation"
+										>
+											<button
+												class="nav-link active"
+												id="materi4-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#materi4"
+												type="button"
+												role="tab"
+											>
+												Materi
+											</button>
+										</li>
+										<li
+											class="nav-item"
+											role="presentation"
+										>
+											<button
+												class="nav-link"
+												id="tugas4-tab"
+												data-bs-toggle="tab"
+												data-bs-target="#tugas4"
+												type="button"
+												role="tab"
+											>
+												Tugas
+											</button>
+										</li>
+									</ul>
 
-                  <!-- Materi pertemuan 4 -->
-                  <div class="tab-content" id="meeting4TabContent">
-                    <div
-                      class="tab-pane fade show active"
-                      id="materi4"
-                      role="tabpanel"
-                    >
-                      <div class="content-card">
-                        <h5 class="content-title">Rangkuman Materi</h5>
-                        <ul class="content-list">
-                          <li>
-                            <strong>HTTP Methods</strong>: Perbedaan GET dan
-                            POST, kapan menggunakan masing-masing
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="tugas4" role="tabpanel">
-                      <div class="content-card">
-                        <h5 class="content-title">Tugas Pertemuan 4</h5>
-                        <div class="assignment-item">
-                          <h6>1. Registration Form System</h6>
-                          <p>
-                            Buat sistem registrasi lengkap dengan validasi
-                            email, password strength, dan konfirmasi password.
-                            Include error handling dan success messages.
-                          </p>
-                        </div>
-                        <div class="deadline">
-                          <strong>Deadline:</strong>
-                          13 Oktober 2024, 23:59 WIB
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Documentation end -->
+									<!-- Materi pertemuan 4 -->
+									<div
+										class="tab-content"
+										id="meeting4TabContent"
+									>
+										<div
+											class="tab-pane fade show active"
+											id="materi4"
+											role="tabpanel"
+										>
+											<div class="content-card">
+												<h5 class="content-title">
+													Rangkuman Materi
+												</h5>
+												<ul class="content-list">
+													<li>
+														<strong
+															>HTTP
+															Methods</strong
+														>: Perbedaan GET dan
+														POST, kapan menggunakan
+														masing-masing
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div
+											class="tab-pane fade"
+											id="tugas4"
+											role="tabpanel"
+										>
+											<div class="content-card">
+												<h5 class="content-title">
+													Tugas Pertemuan 4
+												</h5>
+												<div class="assignment-item">
+													<h6>
+														1. Registration Form
+														System
+													</h6>
+													<p>
+														Buat sistem registrasi
+														lengkap dengan validasi
+														email, password
+														strength, dan konfirmasi
+														password. Include error
+														handling dan success
+														messages.
+													</p>
+												</div>
+												<div class="deadline">
+													<strong>Deadline:</strong>
+													13 Oktober 2024, 23:59 WIB
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Documentation end -->
 
 		<!-- AOS JavaScript -->
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
