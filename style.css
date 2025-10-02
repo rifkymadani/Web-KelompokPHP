@@ -712,7 +712,7 @@ body {
   animation-delay: 0.
 }
 
-@media (max-width: 476px) {
+@media (max-width: 767px) {
 	#offcanvasNavbar {
 		width: 300px;
 		max-width: 80vw;
