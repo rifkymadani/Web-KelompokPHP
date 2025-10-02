@@ -1,210 +1,160 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>UIN Sunan Gunung Djati Bandung</title>
-		<!-- <base href="/Web-KelompokPHP/" /> -->
-		<link
-			rel="icon"
-			href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAMAAACTisy7AAAAVFBMVEVHcEwXfsQke9AifcwVfsQRfsMXfsQaf8UVes4ReM6OwEAkduODrJgTfMidzUCExECFxUCHxkKHxkKGxUGJxz2PzDGat1GGxUWciXEXf8SdinIQe8gTAVqXAAAAHHRSTlMAuCM18//ihkhZYRQMcxr/5XGcuINJLNLRzf6gD1PZwgAAAT1JREFUeAF1kgeChCAMRTNgLIBEqZb733MTdnp5Ssvn0+GFywW+oTRnHWLPhVbwCiIOIzJ64OxVmzgyGdv1zsxcHV9E6e5psY7Ic3V+9s1W6XElCpHITErZ+ebV4mIhUCNxaWXy+3yKo0tzNvR9Xic1sUXKhkRO02PFw1hSYF+t4CqXS0h+GqBhx0SM86sHKMZ5YszkgFGIbiFGJE5NWyyiZREZG6jGAGbbDIRYKbGGHYs74sWLNQIcB0AVo5coNNUTUwFcKTxTm8PhDg1npHNZYwbIcS2iZgv/9Kcta9un822fptjzalRyIxKrZNYmhlkWeT8++398sbaC1P341C47jTlRY81RdrnbxyOZhtOwwB3yOU9avV+2o6BVJPd62czIkdNNPJO7tLt8ocNds8bquGMPX2DTCT+Zp5fmH4fCFdlzu9yJAAAAAElFTkSuQmCC"
-		/>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-			crossorigin="anonymous"
-		/>
 
-		<!-- css global -->
-		<link rel="stylesheet" href="/style.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>UIN Sunan Gunung Djati Bandung</title>
+	<!-- <base href="/Web-KelompokPHP/" /> -->
+	<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAMAAACTisy7AAAAVFBMVEVHcEwXfsQke9AifcwVfsQRfsMXfsQaf8UVes4ReM6OwEAkduODrJgTfMidzUCExECFxUCHxkKHxkKGxUGJxz2PzDGat1GGxUWciXEXf8SdinIQe8gTAVqXAAAAHHRSTlMAuCM18//ihkhZYRQMcxr/5XGcuINJLNLRzf6gD1PZwgAAAT1JREFUeAF1kgeChCAMRTNgLIBEqZb733MTdnp5Ssvn0+GFywW+oTRnHWLPhVbwCiIOIzJ64OxVmzgyGdv1zsxcHV9E6e5psY7Ic3V+9s1W6XElCpHITErZ+ebV4mIhUCNxaWXy+3yKo0tzNvR9Xic1sUXKhkRO02PFw1hSYF+t4CqXS0h+GqBhx0SM86sHKMZ5YszkgFGIbiFGJE5NWyyiZREZG6jGAGbbDIRYKbGGHYs74sWLNQIcB0AVo5coNNUTUwFcKTxTm8PhDg1npHNZYwbIcS2iZgv/9Kcta9un822fptjzalRyIxKrZNYmhlkWeT8++398sbaC1P341C47jTlRY81RdrnbxyOZhtOwwB3yOU9avV+2o6BVJPd62czIkdNNPJO7tLt8ocNds8bquGMPX2DTCT+Zp5fmH4fCFdlzu9yJAAAAAElFTkSuQmCC" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+	<link rel="stylesheet" href="/style.css" />
+	<link rel="stylesheet" href="style.css" />
+	
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
 
-		<!-- CSS univ -->
-		<link rel="stylesheet" href="style.css" />
-
-		<!-- AOS -->
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	</head>
-	<body
-		data-bs-spy="scroll"
-		data-bs-target=".navbar"
-		data-bs-offset="80"
-		tabindex="0"
-	>
-		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-expand-md sticky-top">
-			<div class="container-fluid">
-				<a class="navbar-brand me-auto" href="">PHP</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvasNavbar"
-					aria-controls="offcanvasNavbar"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div
-					class="offcanvas offcanvas-end"
-					tabindex="-1"
-					id="offcanvasNavbar"
-					aria-labelledby="offcanvasNavbarLabel"
-				>
-					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-							Halaman lain
-						</h5>
-						<button
-							type="button"
-							class="btn-close"
-							data-bs-dismiss="offcanvas"
-							aria-label="Close"
-						></button>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-expand-md sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand me-auto" href="">PHP</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+						Halaman lain
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body h-auto d-flex flex-column align-items-center">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item">
+							<a class="nav-link" href="university/">Universitas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="university/faculty.html">Fakultas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="university/major.html">Jurusan</a>
+						</li>
+					</ul>
+					
+					<div id="nav-univ">
+						<a class="nav-link text-white" href="" role="button" aria-expanded="false">
+							Beranda
+						</a>
 					</div>
-					<div
-						class="offcanvas-body h-auto d-flex flex-column align-items-center"
-					>
-						<ul class="navbar-nav d-flex">
-							<li class="nav-item">
-								<a class="nav-link" href="university"
-									>Universitas</a
-								>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar end -->
+	
+	<!-- Konten utama tanpa navbar -->
+	<div class="container my-5">
+		<!-- Header/Judul -->
+		<div class="row">
+			<div class="col-12 text-center">
+				<h1 class="display-4 fw-bold mb-4" id="title">
+					Tentang <br> UIN Sunan Gunung Djati
+				</h1>
+				<p class="lead text-muted">
+					Selamat datang di halaman informasi tentang Universitas
+					kami. Di sini, kami menjelaskan mengenai UIN Sunan Gunung Djati, visi misi, beserta sejarahnya
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Section 1: Pengertian Universitas -->
+	<div class="container my-5">
+		<div class="row my-5">
+			<div class="col-md-8 mx-auto">
+				<div class="card shadow-sm">
+					<div class="card-body">
+						<h2 class="card-title h4 text-center mb-3">
+							UIN Sunan Gunung Djati
+						</h2>
+						<p class="card-text">
+							Universitas Islam Negeri (UIN) Sunan Gunung Djati Bandung berawal dari IAIN Sunan Gunung Djati Bandung yang resmi berdiri pada 8 April 1968 melalui SK Menteri Agama RI No. 56/1968. Pendirian IAIN merupakan hasil perjuangan tokoh Muslim Jawa Barat yang diprakarsai K.H. Anwar Musaddad dan tokoh lainnya sejak 1967. Awalnya dibuka 4 fakultas: Syari’ah, Tarbiyah, Ushuluddin (Bandung), serta Tarbiyah (Garut).
+							
+							IAIN sempat berpindah lokasi beberapa kali: dari Jl. Lengkong Kecil → Jl. Tangkuban Perahu (1973) → Jl. Cipadung (1974, kini Jl. A.H. Nasution No. 105). Dalam perkembangan selanjutnya, sejumlah fakultas cabang (Bogor, Sukabumi, Cirebon) digabung ke Bandung, kemudian sebagian menjadi STAIN (Cirebon, Serang) tahun 1997.
+							
+							Fakultas baru dibuka: Dakwah dan Adab (1993), serta Program Pascasarjana S2 (1997). Akhirnya, melalui Peraturan Presiden RI No. 57 Tahun 2005, tanggal 10 Oktober 2005, IAIN resmi berubah status menjadi UIN Sunan Gunung Djati Bandung.
+						</p>
+						<ul class="list-unstyled">
+							<li class="mb-2">
+								<strong>Visi:</strong>
+								<p>“Menjadi Universitas Islam Negeri yang unggul, kompetitif, dan inovatif berbasis Rahmatan Lil Alamin di Asia Tenggara Tahun 2029”</p>
 							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="university/faculty"
-									>Fakultas</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="university/major"
-									>Jurusan</a
-								>
+							<li class="mb-2">
+								<strong>Misi:</strong>
+								<p>1.Menyelenggarakan pendidikan yang berkualitas dan berkeadilan, berdaya saing global, serta menggunakan piranti TIK terkini dan terbarukan
+									UIN SGD Bandung</p>
+								<p>2. Menyelenggarakan penelitian dan kajian yang fokus pada isu-isu strategis, inovatif, dan fungsional untuk pengembangan IPTEKS, profesi, dan masyarakat
+									UIN SGD Bandung</p>
+								<p>3. Mengembangkan pengabdian kepada masyarakat yang berkontribusi pada peningkatan indeks literasi moderasi beragama, peningkatan kualitas kehidupan beragama, dan intensifikasi dialog antar budaya pada tingkat nasional maupun Asia Tenggara
+									UIN SGD Bandung</p>
+								<p>4.Menciptakan lulusan yang memiliki keimanan dan ketaqwaan kuat, berwawasan luas, berakhlaq karimah, mampu bersaing secara global, dan memiliki semangat kebangsaan yang kuat
+									UIN SGD Bandung</p>
 							</li>
 						</ul>
-
-						<div id="nav-univ">
-							<a
-								class="nav-link text-white"
-								href=""
-								role="button"
-								aria-expanded="false"
-							>
-								Beranda
-							</a>
-						</div>
 					</div>
 				</div>
 			</div>
-		</nav>
-		<!-- Navbar end -->
-
-		<!-- Konten utama tanpa navbar -->
-		<div class="container my-5">
-			<!-- Header/Judul -->
-			<div class="row">
-				<div class="col-12 text-center">
-					<h1 class="display-4 fw-bold mb-4" id="title">
-						Tentang Universitas
-					</h1>
-					<p class="lead text-muted">
-						Selamat datang di halaman informasi tentang Universitas
-						kami. Di sini, kami menjelaskan sejarah, visi, dan
-						program pendidikan yang kami tawarkan.
-					</p>
-				</div>
-			</div>
 		</div>
-
-		<!-- Section 1: Pengertian Universitas -->
-		<div class="container my-5">
-			<div class="row my-5">
-				<div class="col-md-8 mx-auto">
-					<div class="card shadow-sm">
-						<div class="card-body">
-							<h2 class="card-title h4 text-center mb-3">
-								Apa Itu Universitas?
-							</h2>
-							<p class="card-text">
-								Universitas adalah lembaga pendidikan tinggi
-								yang bertujuan untuk mengembangkan ilmu
-								pengetahuan, teknologi, dan seni melalui
-								pendidikan, penelitian, dan pengabdian kepada
-								masyarakat. Universitas kami didirikan dengan
-								komitmen untuk mencetak generasi muda yang
-								berintegritas, inovatif, dan siap menghadapi
-								tantangan global.
-							</p>
-							<ul class="list-unstyled">
-								<li class="mb-2">
-									<strong>Visi:</strong> Menjadi universitas
-									terdepan di Asia Tenggara dalam bidang
-									pendidikan berkualitas.
-								</li>
-								<li class="mb-2">
-									<strong>Misi:</strong> Memberikan pendidikan
-									holistik, mendukung penelitian mutakhir, dan
-									berkontribusi pada pembangunan nasional.
-								</li>
-							</ul>
+	</div>
+	
+	<!-- Section 2: Sejarah Singkat -->
+	<div class="container my-5">
+		<div class="row my-5">
+			<div class="col-md-8 mx-auto">
+				<div class="card shadow-sm">
+					<div class="card-body">
+						<h2 class="card-title h4 text-center mb-3">
+							Sejarah Universitas
+						</h2>
+						<p class="card-text">
+						<p>Sejarah berdirinya UIN Sunan Gunung Djati Bandung tidak lepas dari IAIN Sunan Gunung Djati Bandung karena UIN merupakan kelanjutan dan pengembangan dari IAIN Sunan Gunung Djati Bandung.</p>
+						
+						<p>IAIN Sunan Gunung Djati Bandung didirikan pada tanggal 8 April 1968 M bertepatan dengan 10 Muharram 1388 H berdasarkan Keputusan Menteri Agama RI Nomor 56 Tahun 1968. Kehadiran IAIN Sunan Gunung Djati Bandung merupakan hasil perjuangan para tokoh umat Islam Jawa Barat. Dimulai pada tahun 1967, sejumlah tokoh masyarakat, alim ulama, dan cendekiawan muslim Jawa Barat yang diprakarsai oleh K. H. Anwar Musaddad, K.H. A. Muiz, K.H. R. Sudja'i, dan Arthata dengan persetujuan gubernur Jawa Barat, mereka membentuk Panitia Perizinan Pendirian IAIN di Jawa Barat. Panitia tersebut kemudian disahkan oleh Menteri Agama RI melalui SK-MA No. 128 Tahun 1967.</p>
+						
+						<p>Selanjutnya, berdasarkan Surat Keputusan Menteri Agama RI Nomor 56 Tahun 1968, secara resmi berdiri IAIN Sunan Gunung Djati Bandung. Berbekal SK Menteri Agama tersebut, panitia membuka 4 Fakultas: Syari'ah, Tarbiyah, Ushuluddin di Bandung, dan Tarbiyah di Garut. IAIN Sunan Gunung Djati Bandung terdiri dari Fakultas Ushuluddin, Fakultas Syari'ah, Fakultas Tarbiyah di Bandung, sementara Fakultas Syari'ah dan fakultas lainnya yang ada di Bandung berlokasi di Jalan Lengkong Kecil No. 5.</p>
+						
+						<p>Pada tahun 1973, IAIN Sunan Gunung Djati pindah ke Jalan Tangkuban Parahu No. 14. Pada tahun 1974 IAIN Sunan Gunung Djati pindah lagi ke Jalan Cipadung (sekarang Jalan A.H. Nasution No. 105). Pada tahun 1970, dalam rangka rayonisasi, Fakultas Tarbiyah di Bogor dan Fakultas Syari'ah di Sukabumi yang semula berinduk kepada IAIN Syarif Hidayatullah Jakarta digabungkan pada Fakultas Induk di Bandung. Sedangkan untuk Fakultas Tarbiyah Cirebon yang semula berafiliasi ke IAIN Syarif Hidayatullah, pada tanggal 5 Maret 1976 menginduk ke IAIN Sunan Gunung Djati.</p>
+						
+						<p>Pada perkembangan berikutnya, tahun 1993, didirikanlah dua fakultas baru, yaitu Fakultas Dakwah dan Fakultas Adab. Pada tahun 1997, pengembangan diarahkan dalam bentuk penyelenggaraan Program Pascasarjana yang dimulai dengan membuka Program S2 (Pascasarjana).</p>
+						
+						<p>Pada tahun 1997, terjadi perubahan kebijakan penataan sistem rayonisasi untuk IAIN. Berdasarkan Surat Keputusan Presiden Nomor 11 Tahun 1997 tanggal 21 Maret 1997, Fakultas Tarbiyah Cirebon yang semula menjadi cabang Fakultas Tarbiyah IAIN Sunan Gunung Djati Bandung meningkat statusnya menjadi Sekolah Tinggi Agama Islam (STAIN) Cirebon. Demikian juga dengan Fakultas Syari'ah Serang yang semula merupakan cabang Fakultas Syari'ah IAIN Sunan Gunung Djati Bandung statusnya menjadi STAIN Serang.</p>
+						
+						<p>Berdasarkan Peraturan Presiden RI Nomor 57 Tahun 2005, tanggal 10 Oktober 2005, bertepatan dengan tanggal 6 Ramadhan 1426 H, IAIN berubah statusnya menjadi UIN Sunan Gunung Djati Bandung.</p>
+						</p>
+						<div class="d-flex justify-content-center">
+							<img src="https://dummyimage.com/600x300" alt="Gambar Sejarah Universitas" class="img-fluid rounded" />
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	
+	<!-- AOS JavaScript -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 800,
+			easing: "ease-in-out",
+			once: true,
+			offset: 100,
+		});
+	</script>
+	
+	<!-- Bootstrap JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 
-		<!-- Section 2: Sejarah Singkat -->
-		<div class="container my-5">
-			<div class="row my-5">
-				<div class="col-md-8 mx-auto">
-					<div class="card shadow-sm">
-						<div class="card-body">
-							<h2 class="card-title h4 text-center mb-3">
-								Sejarah Universitas
-							</h2>
-							<p class="card-text">
-								Universitas kami berdiri sejak tahun 1950
-								sebagai respons terhadap kebutuhan pendidikan
-								tinggi pasca-kemerdekaan Indonesia. Awalnya
-								dimulai dengan fakultas kecil, kini telah
-								berkembang menjadi institusi dengan lebih dari
-								20 fakultas dan ribuan mahasiswa. Prestasi kami
-								termasuk kolaborasi internasional dengan
-								universitas-universitas ternama di dunia.
-							</p>
-							<div class="d-flex justify-content-center">
-								<img
-									src="../img/uin-bandung.jpg"
-									alt="Gambar Sejarah Universitas"
-									class="img-fluid rounded"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- AOS JavaScript -->
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<script>
-			AOS.init({
-				duration: 800,
-				easing: "ease-in-out",
-				once: true,
-				offset: 100,
-			});
-		</script>
-
-		<!-- Bootstrap JavaScript -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-			crossorigin="anonymous"
-		></script>
-	</body>
 </html>
