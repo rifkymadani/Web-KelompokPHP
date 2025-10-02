@@ -1,206 +1,161 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Fakultas Sains dan Teknologi</title>
-		<base href="/Web-KelompokPHP/" />
-		<link
-			rel="icon"
-			href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAMAAACTisy7AAAAVFBMVEVHcEwXfsQke9AifcwVfsQRfsMXfsQaf8UVes4ReM6OwEAkduODrJgTfMidzUCExECFxUCHxkKHxkKGxUGJxz2PzDGat1GGxUWciXEXf8SdinIQe8gTAVqXAAAAHHRSTlMAuCM18//ihkhZYRQMcxr/5XGcuINJLNLRzf6gD1PZwgAAAT1JREFUeAF1kgeChCAMRTNgLIBEqZb733MTdnp5Ssvn0+GFywW+oTRnHWLPhVbwCiIOIzJ64OxVmzgyGdv1zsxcHV9E6e5psY7Ic3V+9s1W6XElCpHITErZ+ebV4mIhUCNxaWXy+3yKo0tzNvR9Xic1sUXKhkRO02PFw1hSYF+t4CqXS0h+GqBhx0SM86sHKMZ5YszkgFGIbiFGJE5NWyyiZREZG6jGAGbbDIRYKbGGHYs74sWLNQIcB0AVo5coNNUTUwFcKTxTm8PhDg1npHNZYwbIcS2iZgv/9Kcta9un822fptjzalRyIxKrZNYmhlkWeT8++398sbaC1P341C47jTlRY81RdrnbxyOZhtOwwB3yOU9avV+2o6BVJPd62czIkdNNPJO7tLt8ocNds8bquGMPX2DTCT+Zp5fmH4fCFdlzu9yJAAAAAElFTkSuQmCC"
-		/>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="university/style.css" />
-		<link rel="stylesheet" href="style.css" />
 
-		<!-- AOS -->
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	</head>
-	<body
-		data-bs-spy="scroll"
-		data-bs-target=".navbar"
-		data-bs-offset="80"
-		tabindex="0"
-	>
-		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-expand-md sticky-top">
-			<div class="container-fluid">
-				<a class="navbar-brand me-auto" href="">PHP</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvasNavbar"
-					aria-controls="offcanvasNavbar"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div
-					class="offcanvas offcanvas-end"
-					tabindex="-1"
-					id="offcanvasNavbar"
-					aria-labelledby="offcanvasNavbarLabel"
-				>
-					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-							Halaman lain
-						</h5>
-						<button
-							type="button"
-							class="btn-close"
-							data-bs-dismiss="offcanvas"
-							aria-label="Close"
-						></button>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Fakultas Sains dan Teknologi</title>
+	<!-- <base href="/Web-KelompokPHP/" /> -->
+	<link rel="icon"
+		href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAMAAACTisy7AAAAVFBMVEVHcEwXfsQke9AifcwVfsQRfsMXfsQaf8UVes4ReM6OwEAkduODrJgTfMidzUCExECFxUCHxkKHxkKGxUGJxz2PzDGat1GGxUWciXEXf8SdinIQe8gTAVqXAAAAHHRSTlMAuCM18//ihkhZYRQMcxr/5XGcuINJLNLRzf6gD1PZwgAAAT1JREFUeAF1kgeChCAMRTNgLIBEqZb733MTdnp5Ssvn0+GFywW+oTRnHWLPhVbwCiIOIzJ64OxVmzgyGdv1zsxcHV9E6e5psY7Ic3V+9s1W6XElCpHITErZ+ebV4mIhUCNxaWXy+3yKo0tzNvR9Xic1sUXKhkRO02PFw1hSYF+t4CqXS0h+GqBhx0SM86sHKMZ5YszkgFGIbiFGJE5NWyyiZREZG6jGAGbbDIRYKbGGHYs74sWLNQIcB0AVo5coNNUTUwFcKTxTm8PhDg1npHNZYwbIcS2iZgv/9Kcta9un822fptjzalRyIxKrZNYmhlkWeT8++398sbaC1P341C47jTlRY81RdrnbxyOZhtOwwB3yOU9avV+2o6BVJPd62czIkdNNPJO7tLt8ocNds8bquGMPX2DTCT+Zp5fmH4fCFdlzu9yJAAAAAElFTkSuQmCC" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+	<link rel="stylesheet" href="/style.css" />
+	<link rel="stylesheet" href="style.css" />
+
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-expand-md sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand me-auto" href="">PHP</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+				aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+				aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+						Halaman lain
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body h-auto d-flex flex-column align-items-center">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item">
+							<a class="nav-link" href="university">Universitas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="university/faculty.html">Fakultas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="university/major.html">Jurusan</a>
+						</li>
+					</ul>
+
+					<div id="nav-univ">
+						<a class="nav-link text-white" href="" role="button" aria-expanded="false">
+							Beranda
+						</a>
 					</div>
-					<div
-						class="offcanvas-body h-auto d-flex flex-column align-items-center"
-					>
-						<ul class="navbar-nav d-flex">
-							<li class="nav-item">
-								<a class="nav-link" href="university"
-									>Universitas</a
-								>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar end -->
+
+	<!-- Konten utama tanpa navbar -->
+	<div class="container my-5">
+		<!-- Header/Judul -->
+		<div class="row">
+			<div class="col-12 text-center">
+				<h1 class="display-4 fw-bold mb-4" id="title">
+					Tentang Universitas
+				</h1>
+				<p class="lead text-muted">
+					Selamat datang di halaman informasi tentang Universitas
+					kami. Di sini, kami menjelaskan sejarah, visi, dan
+					program pendidikan yang kami tawarkan.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Section 1: Pengertian Universitas -->
+	<div class="container my-5">
+		<div class="row my-5">
+			<div class="col-md-8 mx-auto">
+				<div class="card shadow-sm">
+					<div class="card-body">
+						<h2 class="card-title h4 text-center mb-3">
+							Apa Itu Universitas?
+						</h2>
+						<p class="card-text">
+							Universitas adalah lembaga pendidikan tinggi
+							yang bertujuan untuk mengembangkan ilmu
+							pengetahuan, teknologi, dan seni melalui
+							pendidikan, penelitian, dan pengabdian kepada
+							masyarakat. Universitas kami didirikan dengan
+							komitmen untuk mencetak generasi muda yang
+							berintegritas, inovatif, dan siap menghadapi
+							tantangan global.
+						</p>
+						<ul class="list-unstyled">
+							<li class="mb-2">
+								<strong>Visi:</strong> Menjadi universitas
+								terdepan di Asia Tenggara dalam bidang
+								pendidikan berkualitas.
 							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="university/faculty.html"
-									>Fakultas</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="university/major.html"
-									>Jurusan</a
-								>
+							<li class="mb-2">
+								<strong>Misi:</strong> Memberikan pendidikan
+								holistik, mendukung penelitian mutakhir, dan
+								berkontribusi pada pembangunan nasional.
 							</li>
 						</ul>
-
-						<div id="nav-univ">
-							<a
-								class="nav-link text-white"
-								href=""
-								role="button"
-								aria-expanded="false"
-							>
-								Beranda
-							</a>
-						</div>
 					</div>
 				</div>
 			</div>
-		</nav>
-		<!-- Navbar end -->
-
-		<!-- Konten utama tanpa navbar -->
-		<div class="container my-5">
-			<!-- Header/Judul -->
-			<div class="row">
-				<div class="col-12 text-center">
-					<h1 class="display-4 fw-bold mb-4" id="title">
-						Tentang Universitas
-					</h1>
-					<p class="lead text-muted">
-						Selamat datang di halaman informasi tentang Universitas
-						kami. Di sini, kami menjelaskan sejarah, visi, dan
-						program pendidikan yang kami tawarkan.
-					</p>
-				</div>
-			</div>
 		</div>
+	</div>
 
-		<!-- Section 1: Pengertian Universitas -->
-		<div class="container my-5">
-			<div class="row my-5">
-				<div class="col-md-8 mx-auto">
-					<div class="card shadow-sm">
-						<div class="card-body">
-							<h2 class="card-title h4 text-center mb-3">
-								Apa Itu Universitas?
-							</h2>
-							<p class="card-text">
-								Universitas adalah lembaga pendidikan tinggi
-								yang bertujuan untuk mengembangkan ilmu
-								pengetahuan, teknologi, dan seni melalui
-								pendidikan, penelitian, dan pengabdian kepada
-								masyarakat. Universitas kami didirikan dengan
-								komitmen untuk mencetak generasi muda yang
-								berintegritas, inovatif, dan siap menghadapi
-								tantangan global.
-							</p>
-							<ul class="list-unstyled">
-								<li class="mb-2">
-									<strong>Visi:</strong> Menjadi universitas
-									terdepan di Asia Tenggara dalam bidang
-									pendidikan berkualitas.
-								</li>
-								<li class="mb-2">
-									<strong>Misi:</strong> Memberikan pendidikan
-									holistik, mendukung penelitian mutakhir, dan
-									berkontribusi pada pembangunan nasional.
-								</li>
-							</ul>
+	<!-- Section 2: Sejarah Singkat -->
+	<div class="container my-5">
+		<div class="row my-5">
+			<div class="col-md-8 mx-auto">
+				<div class="card shadow-sm">
+					<div class="card-body">
+						<h2 class="card-title h4 text-center mb-3">
+							Sejarah Universitas
+						</h2>
+						<p class="card-text">
+							Universitas kami berdiri sejak tahun 1950
+							sebagai respons terhadap kebutuhan pendidikan
+							tinggi pasca-kemerdekaan Indonesia. Awalnya
+							dimulai dengan fakultas kecil, kini telah
+							berkembang menjadi institusi dengan lebih dari
+							20 fakultas dan ribuan mahasiswa. Prestasi kami
+							termasuk kolaborasi internasional dengan
+							universitas-universitas ternama di dunia.
+						</p>
+						<div class="d-flex justify-content-center">
+							<img src="https://dummyimage.com/600x300" alt="Gambar Sejarah Universitas"
+								class="img-fluid rounded" />
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- Section 2: Sejarah Singkat -->
-		<div class="container my-5">
-			<div class="row my-5">
-				<div class="col-md-8 mx-auto">
-					<div class="card shadow-sm">
-						<div class="card-body">
-							<h2 class="card-title h4 text-center mb-3">
-								Sejarah Universitas
-							</h2>
-							<p class="card-text">
-								Universitas kami berdiri sejak tahun 1950
-								sebagai respons terhadap kebutuhan pendidikan
-								tinggi pasca-kemerdekaan Indonesia. Awalnya
-								dimulai dengan fakultas kecil, kini telah
-								berkembang menjadi institusi dengan lebih dari
-								20 fakultas dan ribuan mahasiswa. Prestasi kami
-								termasuk kolaborasi internasional dengan
-								universitas-universitas ternama di dunia.
-							</p>
-							<div class="d-flex justify-content-center">
-								<img
-									src="https://dummyimage.com/600x300"
-									alt="Gambar Sejarah Universitas"
-									class="img-fluid rounded"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<!-- AOS JavaScript -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 800,
+			easing: "ease-in-out",
+			once: true,
+			offset: 100,
+		});
+	</script>
 
-		<!-- AOS JavaScript -->
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<script>
-			AOS.init({
-				duration: 800,
-				easing: "ease-in-out",
-				once: true,
-				offset: 100,
-			});
-		</script>
+	<!-- Bootstrap JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+</body>
 
-		<!-- Bootstrap JavaScript -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-			crossorigin="anonymous"
-		></script>
-	</body>
 </html>
