@@ -1,185 +1,206 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>UIN Sunan Gunung Djati Bandung</title>
-		<!-- <base href="/Web-KelompokPHP/" /> -->
-		<link
-			rel="icon"
-			href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAbFBMVEVHcEwAACtrZx2moBgzNByknRIAACGxqRHGvBNcWxt+eRN0cxaSjhOkohmIhBOLhA//+Rb/8BYAAA3/8xbWzBMeGRF0bA66shGRiQ0WERHPxRKnnQ8uKQng1hRFPwwQCQ5dVQ2Dew7o3RTv4xSrh72oAAAAEHRSTlMAGZXWUvYs/f50iKbH4LLpda/3tgAAAatJREFUKJFtkoly6yAMRXHiCZCkGSwWsRjM8v//+GSnbfrS3vHYMz5cSUhi7KXLLOV8YX9ofggTu8lRPOY3dLnnzkVKyFuM/f6fXcYxkjcji2yS6ybKFzvl2JaMrpRSnRjkz6dvX4/J8BW2EMIGsGI3OD69F8ObcUAgrEovmp6B3jzzfkTMFSwUt0JSC1GtO6qP4w6DC0+MK6UbGDISF7GM/UbnhBFscLtHgdPareu69azOjE0iC7ftRnIoV7WusG3glTYTm0Uya7BbO6B1FLvWupVF5JnJRRmwNkBUSiUQeqGvARh9keykNaeUtYDzlVKSXe+Qzl4J0nm7OeXLutm9Ku9cDSC4uDI5Ih5QqVHWHVJBwUL21OBZeLND6suyQ73UYEndmZlN0cUSyPkNC8FQcxITNQF5gncIyPneP2m8sE+4fsFQKOoxF84TwhPaJwxUDuJze3LCVPc6ez/K2iioN5+bdDON0zS0OkTBY07x9rUKj8zbML55Er2ib/3+Y4n2ZUAklgSi4/nGfmjm0bSUfcLmMfL3zZVnxIg0XHGW7LemWV6vcp5ef/4BVVUwhynIb5kAAAAASUVORK5CYII="
-		/>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="/style.css" />
-		<link rel="stylesheet" href="style.css" />
 
-		<!-- AOS -->
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	</head>
-	<body
-		data-bs-spy="scroll"
-		data-bs-target=".navbar"
-		data-bs-offset="80"
-		tabindex="0"
-	>
-		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-expand-md sticky-top">
-			<div class="container-fluid">
-				<a class="navbar-brand me-auto" href="">PHP</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvasNavbar"
-					aria-controls="offcanvasNavbar"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div
-					class="offcanvas offcanvas-end"
-					tabindex="-1"
-					id="offcanvasNavbar"
-					aria-labelledby="offcanvasNavbarLabel"
-				>
-					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-							Halaman lain
-						</h5>
-						<button
-							type="button"
-							class="btn-close"
-							data-bs-dismiss="offcanvas"
-							aria-label="Close"
-						></button>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Jurusan Teknik Informatika</title>
+	<base href="/Web-KelompokPHP/" />
+	<link rel="icon"
+		href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAbFBMVEVHcEwAACtrZx2moBgzNByknRIAACGxqRHGvBNcWxt+eRN0cxaSjhOkohmIhBOLhA//+Rb/8BYAAA3/8xbWzBMeGRF0bA66shGRiQ0WERHPxRKnnQ8uKQng1hRFPwwQCQ5dVQ2Dew7o3RTv4xSrh72oAAAAEHRSTlMAGZXWUvYs/f50iKbH4LLpda/3tgAAAatJREFUKJFtkoly6yAMRXHiCZCkGSwWsRjM8v//+GSnbfrS3vHYMz5cSUhi7KXLLOV8YX9ofggTu8lRPOY3dLnnzkVKyFuM/f6fXcYxkjcji2yS6ybKFzvl2JaMrpRSnRjkz6dvX4/J8BW2EMIGsGI3OD69F8ObcUAgrEovmp6B3jzzfkTMFSwUt0JSC1GtO6qP4w6DC0+MK6UbGDISF7GM/UbnhBFscLtHgdPareu69azOjE0iC7ftRnIoV7WusG3glTYTm0Uya7BbO6B1FLvWupVF5JnJRRmwNkBUSiUQeqGvARh9keykNaeUtYDzlVKSXe+Qzl4J0nm7OeXLutm9Ku9cDSC4uDI5Ih5QqVHWHVJBwUL21OBZeLND6suyQ73UYEndmZlN0cUSyPkNC8FQcxITNQF5gncIyPneP2m8sE+4fsFQKOoxF84TwhPaJwxUDuJze3LCVPc6ez/K2iioN5+bdDON0zS0OkTBY07x9rUKj8zbML55Er2ib/3+Y4n2ZUAklgSi4/nGfmjm0bSUfcLmMfL3zZVnxIg0XHGW7LemWV6vcp5ef/4BVVUwhynIb5kAAAAASUVORK5CYII=" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+	<link rel="stylesheet" href="university/style.css" />
+	<link rel="stylesheet" href="style.css" />
+
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-expand-md sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand me-auto" href="">PHP</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+				aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+				aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+						Halaman lain
+					</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body h-auto d-flex flex-column align-items-center">
+					<ul class="navbar-nav d-flex">
+						<li class="nav-item">
+							<a class="nav-link" href="university">Universitas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="university/faculty">Fakultas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="university/major">Jurusan</a>
+						</li>
+					</ul>
+
+					<div id="nav-univ">
+						<a class="nav-link text-white" href="" role="button" aria-expanded="false">
+							Beranda
+						</a>
 					</div>
-					<div
-						class="offcanvas-body h-auto d-flex flex-column align-items-center"
-					>
-						<ul class="navbar-nav d-flex">
-							<li class="nav-item">
-								<a class="nav-link" href="/university/"
-									>Universitas</a
-								>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar end -->
+
+	<!-- Konten utama tanpa navbar -->
+	<div class="container my-5">
+		<!-- Header/Judul -->
+		<div class="row">
+			<div class="col-12 text-center">
+				<h1 class="display-4 fw-bold mb-4" id="title">
+					Jurusan Teknik Informatika
+				</h1>
+				<p class="lead text-muted">
+					Selamat datang di halaman informasi tentang Universitas
+					kami. Di sini, kami menjelaskan sejarah, visi, dan
+					program pendidikan yang kami tawarkan.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Section 1: Pengertian Universitas -->
+	<div class="container my-5">
+		<div class="row my-5">
+			<div class="col-md-8 mx-auto">
+				<div class="card shadow-sm">
+					<div class="card-body">
+						<h2 class="card-title h4 text-center mb-3">
+							Apa itu Teknik Informatika?
+						</h2>
+						<p class="card-text">
+							Teknik Informatika UIN Bandung adalah Program Studi S1 di bawah Fakultas Sains dan
+							Teknologi, UIN Sunan Gunung Djati Bandung yang berfokus pada kecerdasan artifisial (AI) dan
+							distributed computing, dan telah mendapatkan akreditasi Unggul dari LAM INFOKOM. Jurusan ini
+							didirikan pada tahun 2000 dan memiliki visi menghasilkan lulusan yang kompetitif, berakhlak
+							mulia, dan mampu berkontribusi pada solusi berbasis informatika di masyarakat dan industri.
+						</p>
+						<ul class="list-unstyled">
+							<li class="mb-2">
+								<strong>Visi:</strong> "Menjadi Jurusan/ Prodi Teknik Informatika yang unggul,
+								kompetitif, dan inovatif berbasis rahmatan lil ‘alamin dalam bidang kecerdasan
+								artifisial dan distributed computing Asia Tenggara pada tahun 2029."
 							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="faculty.html"
-									>Fakultas</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="major.html"
-									>Jurusan</a
-								>
+							<li class="mb-2">
+								<strong>Misi:</strong> <br> 1. Menyelenggarakan layanan pendidikan dalam bidang
+								kecerdasan
+								artifisial dan distributed computing yang berkualitas, berkeadilan, dan berdaya saing
+								global. <br>
+								2. Menyelenggarakan penelitian dalam bidang kecerdasan artifisial dan distributed
+								computing yang fokus pada isu-isu strategis serta bersifatinovatif dan fungsional untuk
+								pengembangan ipteks, profesi, dan masyarakat. <br>
+								3. Menyelenggarakan pengabdian kepada masyarakat dalam bidang kecerdasan artifisial dan
+								distributed computing yang berkontribusi pada peningkatan indeks Moderasi Beragama, dan
+								kesejahteraan masyarakat. <br>
+								4. Menyelenggarakan kegiatan kemahasiwaan untuk membentuk mahasiswa Jurusan/ Prodi
+								Teknik Informatika yang memiliki akhlak karimah, unggul, inovatif, dan kompetitif. <br>
+								5. Menyelenggarakan tata kelola layanan di Jurusan/ Prodi Teknik Informatika yang
+								berbasis digital, transparan, berkeadilan, efisien, dan akuntabel.
 							</li>
 						</ul>
-
-						<div id="nav-univ">
-							<a
-								class="nav-link text-white"
-								href=""
-								role="button"
-								aria-expanded="false"
-							>
-								Beranda
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-		<!-- Navbar end -->
-
-		<!-- Konten utama tanpa navbar -->
-		<div class="container my-5">
-			<!-- Header/Judul -->
-			<div class="row">
-				<div class="col-12 text-center">
-					<h1 class="display-4 fw-bold mb-4" id="title">
-						Tentang <br> Teknik Informatika
-					</h1>
-					<p class="lead text-muted">
-						Selamat datang di halaman informasi Teknik Informatika. Di sini,kami menjelaskan Mengenai Teknik Informatika beserta sejarahnya
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- Section 1: Pengertian Universitas -->
-		<div class="container my-5">
-			<div class="row my-5">
-				<div class="col-md-8 mx-auto">
-					<div class="card shadow-sm">
-						<div class="card-body">
-							<h2 class="card-title h4 text-center mb-3">
-								Teknik Informatika
-							</h2>
-							<p class="card-text">
-								Teknik Informatika adalah salah satu program studi yang berada di bawah Fakultas Sains dan Teknologi. Prodi ini berfokus pada ilmu dan penerapan teknologi komputer, khususnya dalam pengembangan perangkat lunak, sistem informasi, jaringan komputer, Artificial Intellegence, hingga Cyber Security.
-							</p>
-
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- Section 2: Sejarah Singkat -->
-		<div class="container my-5">
-			<div class="row my-5">
-				<div class="col-md-8 mx-auto">
-					<div class="card shadow-sm">
-						<div class="card-body">
-							<h2 class="card-title h4 text-center mb-3">
-								Sejarah Universitas
-							</h2>
-							<p class="card-text">
-								<p>Embrio FST diawali dengan pembukaan Program Studi Teknik Informatika pada tahun 2000. Secara berturut-turut Program Studi Teknik Informatika menerima mahasiswa baru tahun akademik 2000/2001, 2001/2002, dan 2002/2003, selanjutnya menerima mahasiswa pada tahun 2005/2006. Program Studi ini memperoleh perluasan mandat berdasarkan persetujuan Dirjen Dikti dengan nomor 2829/D/T/2004, SK Dirjen Bagais Depag RI Nomor Dj.II/384/2004. Selanjutnya yang menjadi dasar pengembangan lembaga adalah Surat Rekomendasi Direktur Jenderal Pendidikan Tinggi (Dirjen Dikti) Departemen Pendidikan Nasional nomor 4469/D/T/2004 tanggal 12 November 2004 tentang Rekomendasi Pembukaan Program Studi umum pada UIN SGD Bandung. Surat Persetujuan Menteri Pendidikan Nasional RI nomor 179/MPN/KI/2004 tanggal 10 Desember 2004 tentang persetujuan Perubahan IAIN SGD Bandung menjadi UIN SGD Bandung. Surat Menteri Agama RI mengenai Rancangan Peraturan Presiden tentang Perubahan IAIN SGD Bandung menjadi UIN SGD dengan nomor MA/89/2005 tanggal 31 Maret 2005 yang ditujukan ke Menteri Pendayagunaan Aparatur Negara.</p>
+	<!-- Section 2: Sejarah Singkat -->
+	<div class="container my-5">
+		<div class="row my-5">
+			<div class="col-md-8 mx-auto">
+				<div class="card shadow-sm">
+					<div class="card-body">
+						<h2 class="card-title h4 text-center mb-3">
+							Apa Itu SAKTI?
+						</h2>
+						<p class="card-text">
+							Singkatan dari <strong>Solid, Aktif, Kreatif, Transformatif, dan Islami</strong>, yang
+							menjadi nilai utama
+							Jurusan Teknik Informatika UIN Sunan Gunung Djati Bandung. <br>
 
-								<p>Persiapan penyelenggaraan FST berdasarkan Keputusan Rektor UIN SGD Bandung Nomor: Un.05/A/Kp.07.6/012/2006 tanggal 24 Mei 2006, tentang pengangkatan PLH Dekan FST yaitu Drs. H. Afifuddin, MM., sekaligus sebagai dekan Fakultas Tarbiyah, dengan tugasnya sampai terbentuknya dekan terpilih.</p>
+							<strong>S</strong> (Solid) → Melambangkan kekuatan dan kebersamaan keluarga besar Teknik
+							Informatika, saling
+							mendukung dalam akademik maupun non-akademik. <br>
 
-								<p>Dalam memenuhi kebutuhan tenaga fungsional dosen dan struktur kepemimpinan pada FST, berdasarkan Keputusan Rektor UIN SGD Bandung Nomor: Un.05/A/Kp.07.6/101/2006, tentang pengisian dosen ditetapkan 12 orang dosen dengan berbagai keahlian dan disiplin ilmu. Selanjutnya dilakukan pemilihan Dekan pertama yaitu Dr. Ir. M. Subandi, MP., yang ditetapkan oleh Surat Keputusan Rektor Nomor: Un.05/A/Kp.07.6/132/2006, menyusul kemudian pengangkatan para Pembantu Dekan berdasarkan Surat Keputusan Rektor Nomor: Un.05/A/Kp.07.6/138/2006, dilanjutkan dengan pemilihan ketua Program Studi berdasarkan Surat Keputusan Rektor Nomor: Un.05/A/Kp.07.6/138/2006. Dengan dasar tersebut, Program Studi untuk FST adalah Matematika, Biologi, Fisika, Kimia, Teknik Informatika, Teknik Pertanian, dan Teknik Informatika. Pada tahap awal yakni tahun akademik 2006/2007 dibuka Program Studi Matematika, Biologi, Teknik Informatika dan Teknik Pertanian. Kemudian pada tahun akademik 2008/2009 dibuka Program Studi Fisika, Kimia, dan Teknik Informatika. Saat ini FST memiliki 7 Program Studi, antara lain Matematika, Fisika, Kimia, Biologi, Teknik Informatika, Teknik Elektro, dan Agroteknologi.</p>
+							<strong>A</strong> (Aktif) → Mahasiswa dituntut untuk selalu aktif dalam belajar,
+							berorganisasi, dan
+							berkegiatan positif. <br>
 
-								<p>Jurusan Teknik Informatika UIN Sunan Gunung Djati Bandung didirikan sejak tahun 2004 berdasarkan Keputusan Direktur Jenderal Kelembagaan Agama Islam Nomor DJ.II/384/2004 tentang Izin Penyelenggaraan Program Studi Teknik Informatika Program Sarjana (S1) pada Institut Agama Islam Negeri (IAIN) Sunan Gunung Djati Bandung. Selanjutnya izin penyelenggaraan diperpanjang berdasarkan Keputusan Direktur Jenderal Pendidikan Islam Nomor Dj.I/07/2010 tentang Perpanjangan Izin Penyelenggaraan Program Studi Program Sarjana (S1) UIN Sunan Gunung Djati Bandung. Saat ini Jurusan Teknik Informatika terakreditasi UNGGUL berdasarkan Keputusan Lembaga Akreditasi Mandiri Informatika dan Komputer Nomor 121/SK/LAM-INFOKOM/Ak/S/VIII/2023 tentang Peringkat Akreditasi Program Studi Teknik Informatika pada Program Sarjana, UIN Sunan Gunung Djati Bandung.</p>
-							</p>
-							<div class="d-flex justify-content-center">
-								<img
-									src="https://dummyimage.com/600x300"
-									alt="Gambar Sejarah Universitas"
-									class="img-fluid rounded"
-								/>
-							</div>
+							<strong>K</strong> (Kreatif) → Kreatif dalam berpikir dan bertindak, terutama dalam
+							memecahkan masalah dan
+							menghasilkan inovasi di bidang informatika. <br>
+
+							<strong>T</strong> (Transformatif) → Berorientasi pada perubahan menuju insan yang lebih
+							kompeten, berilmu,
+							dan berkembang sesuai perkembangan teknologi. <br>
+
+							<strong>I</strong> (Islami) → Nilai-nilai keislaman menjadi landasan utama, sesuai dengan
+							identitas UIN Sunan
+							Gunung Djati Bandung.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="container my-5">
+		<div class="row my-5">
+			<div class="col-md-8 mx-auto">
+				<div class="card shadow-sm">
+					<div class="card-body">
+						<h2 class="card-title h4 text-center mb-3">
+							Sejarah Singkat
+						</h2>
+						<p class="card-text">
+							Jurusan <strong>Teknik Informatika UIN Sunan Gunung Djati Bandung</strong> berdiri sejak
+							2004 berdasarkan
+							izin Dirjen Kelembagaan Agama Islam. Izin penyelenggaraan diperpanjang pada 2010 oleh Dirjen
+							Pendidikan Islam. Saat ini, program studi tersebut telah meraih akreditasi UNGGUL dari
+							Lembaga Akreditasi Mandiri Informatika dan Komputer (LAM-INFOKOM) melalui SK Nomor
+							121/SK/LAM-INFOKOM/Ak/S/VIII/2023.
+						</p>
+						<div class="d-flex justify-content-evenly">
+							<img src="../img/bnner.png" alt="Gambar Sejarah Universitas" class="img-fluid rounded" />
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- AOS JavaScript -->
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<script>
-			AOS.init({
-				duration: 800,
-				easing: "ease-in-out",
-				once: true,
-				offset: 100,
-			});
-		</script>
+	<!-- AOS JavaScript -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 800,
+			easing: "ease-in-out",
+			once: true,
+			offset: 100,
+		});
+	</script>
 
-		<!-- Bootstrap JavaScript -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-			crossorigin="anonymous"
-		></script>
-	</body>
+	<!-- Bootstrap JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>

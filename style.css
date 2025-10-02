@@ -141,7 +141,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(img/hero-bg.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(img/BG-hero.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -712,7 +712,7 @@ body {
   animation-delay: 0.
 }
 
-@media (max-width: 476px) {
+@media (max-width: 767px) {
 	#offcanvasNavbar {
 		width: 300px;
 		max-width: 80vw;
