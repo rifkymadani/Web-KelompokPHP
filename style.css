@@ -141,7 +141,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(img/BG-hero.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(img/bg-hero.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
