@@ -141,30 +141,42 @@
     </section>
     <!-- About section end -->
 
-    <!-- Members -->
-    <section data-aos="fade-up" id="members">
-      <div class="container">
-        <h2 class="section-title text-center mb-5">ANGGOTA KELOMPOK</h2>
-        <div class="row justify-content-center" id="members-container">
-          <template id="member-template">
-            <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-              <div class="member-card card border-0">
-                <img class="card-img-top member-img" alt="" />
-                <div class="card-body">
-                  <h5 class="member-name card-title"></h5>
-                  <p class="card-text nim"></p>
-                  <p class="card-text ttl"></p>
-                  <p class="card-text jurusan"></p>
-                  <p class="card-text angkatan"></p>
-                  <span class="member-role"></span>
-                </div>
-              </div>
-            </div>
-          </template>
-        </div>
-      </div>
-    </section>
-    <!-- Members end -->
+		<!-- Members -->
+		<section data-aos="fade-up" id="members">
+			<div class="container">
+				<h2 class="section-title text-center mb-5">MENTOR</h2>
+				<div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+					<div class="member-card card border-0">
+						<img class="card-img-top member-img" src="img/mentor-yulqi-aulia.jpg" alt=""/>
+						<div class="card-body">
+							<h5 class="member-name card-title">Yulqi Aulia</h5>
+							<p class="card-text ttl">TTL: Garut, 17 Mei 2006</p>
+							<p class="card-text angkatan">ANGKATAN 2024</p>
+							<span class="member-role">Mentor</span>
+						</div>
+					</div>
+				</div>
+				<h2 class="section-title text-center mb-5">ANGGOTA KELOMPOK</h2>
+				<div class="row justify-content-center" id="members-container">
+					<template id="member-template">
+						<div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+							<div class="member-card card border-0">
+								<img class="card-img-top member-img" alt=""/>
+								<div class="card-body">
+									<h5 class="member-name card-title"></h5>
+									<p class="card-text nim"></p>
+									<p class="card-text ttl"></p>
+									<p class="card-text jurusan"></p>
+									<p class="card-text angkatan"></p>
+									<span class="member-role"></span>
+								</div>
+							</div>
+						</div>
+					</template>
+				</div>
+			</div>
+		</section>
+		<!-- Members end -->
 
     <!-- Documentation Section -->
     <section data-aos="fade-up" id="documentation">
@@ -800,29 +812,22 @@ Adapun langkah evaluasi manajemen waktu:
         const tpl = document.getElementById("member-template");
         const frag = document.createDocumentFragment();
 
-        data.forEach((member) => {
-          const clone = tpl.content.cloneNode(true);
+				data.forEach((member) => {
+					const clone = tpl.content.cloneNode(true)
 
-          clone.querySelector(".member-img").src =
-            member.img || "https://dummyimage.com/1024";
-          clone.querySelector(".member-name").textContent =
-            member.name || "no name";
-          clone.querySelector(".nim").textContent =
-            `NIM: ${member.nim}` || "NIM:";
-          clone.querySelector(".ttl").textContent =
-            `TTL: ${member.ttl}` || "TTL:";
-          clone.querySelector(".jurusan").textContent =
-            "JURUSAN: TEKNIK INFORMATIKA";
-          clone.querySelector(".angkatan").textContent = "ANGKATAN: 2025";
-          clone.querySelector(".member-role").textContent =
-            member.role || "Anggota";
+					clone.querySelector(".member-img").src = member.img || "https://dummyimage.com/1024"
+					clone.querySelector(".member-name").textContent = member.name || "no name"
+					clone.querySelector(".nim").textContent = `NIM: ${member.nim}` || "NIM:"
+					clone.querySelector(".ttl").textContent = `TTL: ${member.ttl}` || "TTL:"
+					clone.querySelector(".jurusan").textContent = "JURUSAN: TEKNIK INFORMATIKA"
+					clone.querySelector(".angkatan").textContent = "ANGKATAN: 2025"
+					clone.querySelector(".member-role").textContent = member.role || "Anggota"
 
-          frag.appendChild(clone);
-        });
+					frag.appendChild(clone)
+				})
 
-        container.innerHTML = "";
-        container.appendChild(frag);
-      }
+				container.appendChild(frag)
+			}
 
       fetch("./members.json")
         .then((res) => res.json())
