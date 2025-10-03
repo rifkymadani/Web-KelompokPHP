@@ -3,70 +3,70 @@
 		"name": "Muhammad Akmal (H1)",
 		"nim": 1257050059,
 		"ttl": "Cirebon, 8 Juni 2007",
-		"img": "./img/muhammad-akmal.jpg",
+		"img": "./img/members/muhammad-akmal.jpg",
 		"role": "Anggota"
 	},
 	{
 		"name": "Anggita Reva Elvariyanti (H2)",
 		"nim": 1257050021,
 		"ttl": "Karawang, 23 Juni 2007",
-		"img": "./img/anggita-reva.jpg",
+		"img": "./img/members//anggita-reva.jpg",
 		"role": "Anggota"
 	},
 	{
 		"name": "Abiyyu Amanullah (H3)",
 		"nim": 1257050052,
 		"ttl": "Balikpapan, 14 April 2007",
-		"img": "./img/abiyyu-amanullah.jpg",
+		"img": "./img/members/abiyyu-amanullah.jpg",
 		"role": "Anggota"
 	},
 	{
 		"name": "Bar'an Dwi Rasma Abdurrahman (H4)",
 		"nim": 1257050102,
 		"ttl": "Rengkasbitung Lebak Banten, 23 Agustus 2007",
-		"img": "./img/baran-dwi-rasma-abdurrahman.png",
+		"img": "./img/members/baran-dwi-rasma-abdurrahman.png",
 		"role": "Anggota"
 	},
 	{
 		"name": "Hasya Dafin (H5)",
 		"nim": 1257050058,
 		"ttl": "Bandung, 19 Desember 2006",
-		"img": "./img/hasya-dafin.jpg",
+		"img": "./img/members/hasya-dafin.jpg",
 		"role": "Ketua"
 	},
 	{
 		"name": "Nasywa Fawwaz (H6)",
 		"nim": 1257050069,
 		"ttl": "Bandung, 24 Mei 2007",
-		"img": "./img/nasya-fawwaz.jpg",
+		"img": "./img/members/nasya-fawwaz.jpg",
 		"role": "Anggota"
 	},
 	{
 		"name": "Muhammad Ridzwan Al-Haqqinazil (H7)",
 		"nim": 1257050004,
 		"ttl": "Sukabumi, 24 Juli 2007",
-		"img": "./img/muhammad-ridzwan.jpg",
+		"img": "./img/members/muhammad-ridzwan.jpg",
 		"role": "Anggota"
 	},
 	{
 		"name": "Muhammad Jalaludin Manshur (H8)",
 		"nim": 1257050133,
-		"ttl": "Bandung, 5 April 2005",
-		"img": "./img/muhammad-jalaludin-manshur.jpg",
+		"ttl": "Sukabumi, 5 April 2005",
+		"img": "./img/members/muhammad-jalaludin-manshur.jpg",
 		"role": "Anggota"
 	},
 	{
 		"name": "Mochamad Rifky Madani Mulyana (H9)",
 		"nim": 1257050097,
 		"ttl": "Bandung, 20 Mei 2006",
-		"img": "./img/mochammad-rifky.jpg",
+		"img": "./img/members/mochammad-rifky.jpg",
 		"role": "Anggota"
 	},
 	{
 		"name": "Denis Julfikar (H10)",
 		"nim": 1257050087,
-		"ttl": "10 DESEMBER 2007",
-		"img": "./img/denis-julfikar.jpg",
+		"ttl": "Sumedang, 10 Desember 2007",
+		"img": "./img/members/denis-julfikar.jpg",
 		"role": "Anggota"
 	}
 ]
